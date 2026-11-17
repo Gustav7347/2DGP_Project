@@ -434,6 +434,26 @@ class Renderer:
         image.clip_composite_draw(left+ox,image.h-(top+oy+oh),ow,oh,0,'h' if enemy.facing<0 else '',
             enemy.x-camera+enemy.facing*(ox+ow/2-ax)*scale,enemy.y+(ay-oy-oh/2)*scale,ow*scale,oh*scale)
 
+    def draw_quickdraw_arc(self, x, y, face, elapsed):
+        if not .10<=elapsed<.21:return
+        age=(elapsed-.10)/.11
+        extent=min(1.,age*5+.12)
+        fade=(1-age)**.8
+        points=[];indices=[]
+        for i in range(37):
+            t=i/36
+            angle=-2.95+t*extent*3.55
+            width=(1+9*math.sin(math.pi*t))*fade
+            px=x+face*(8+math.cos(angle)*151)
+            py=y+math.sin(angle)*24
+            for offset in (0,width):
+                points.append((px,py+offset,(194,229,244,round(230*fade*(.2+.8*t)))))
+            if i:
+                j=2*i;indices.extend((j-2,j-1,j,j-1,j+1,j))
+        if not self.mesh(points,indices):
+            for i in range(2,len(points),2):
+                p2.draw_line(*map(round,points[i-2][:2]),*map(round,points[i][:2]),176,205,222)
+
     def environment(self, game, camera):
         boss=game.stage_index==3
         bg=self.backgrounds[('mountain','mountain-trail-v1','dojo-courtyard-v1','dojo')[game.stage_index]]
@@ -497,7 +517,7 @@ class Renderer:
             x=e['x']-camera; y=e['y']; t=1-e['life']/e['max_life']
             a=round((1-t)*235)
             if e['kind']=='slash':
-                if self.geometry_supported and not e.get('echo') and 'combo' in e:continue
+                # Baked sword poses use the authored slash FX at contact.
                 face=e.get('facing',1)
                 scale=e.get('reach',165)/61
                 tail=1-max(0.,t-.55)/.45
@@ -678,6 +698,8 @@ class Renderer:
         # it on the foreground layer makes a non-damaging parry look like a stab.
         for enemy in sorted(game.enemies,key=lambda e:e.alive):self.draw_enemy(enemy,camera)
         self.draw_hero(name,seconds,p.x-camera,p.y,face,alpha=alpha,frame=frame)
+        if name=='parry' and p.parry_feedback>0:
+            self.draw_quickdraw_arc(p.x-camera,p.y+77,face,.22-p.parry_feedback)
         # The readied thrust runs in front of the coat at close range.
         for enemy in game.enemies:
             if self.enemy_pose(enemy)==('boss-extra',0):

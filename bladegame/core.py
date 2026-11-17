@@ -113,6 +113,7 @@ class Enemy:
     strike_spent: bool = False
     windup_total: float = .65
     hurt_duration: float = .18
+    parry_push_delay: float = 0.
     recoil_left: float = 0.
     recoil_time: float = .14
     recoil_distance: float = 0.
@@ -612,6 +613,7 @@ class Game:
             direction=(1 if dx>0 else -1) if dx else p.facing
             target.recoil_time=target.recoil_left=C.PARRY_PUSH_TIME
             target.recoil_distance=direction*push
+            target.parry_push_delay=.10
 
     def _enemy_strike(self, enemy):
         p=self.player
@@ -691,8 +693,9 @@ class Game:
         enemy.elapsed+=dt
         enemy.hurt=max(0.,enemy.hurt-dt)
         # On a deflection let contact register before the blade drives the target back.
-        push_dt=min(dt,max(0.,.22-enemy.deflect_left-.055)) if enemy.deflect_left>0 else dt
-        self._advance_recoil(enemy,push_dt)
+        delay=min(dt,enemy.parry_push_delay)
+        enemy.parry_push_delay-=delay
+        self._advance_recoil(enemy,dt-delay)
         if not enemy.alive: return
         if enemy.state=='arriving':
             enemy.timer-=dt

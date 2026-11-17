@@ -13,8 +13,12 @@ def parry_pose_time(animation,seconds,feedback=0.):
     if feedback>0:
         elapsed=max(0.,.22-feedback)
         if elapsed<.025:return guard
-        if elapsed<.105:return contact+(followthrough-contact-2e-8)*(elapsed-.025)/.080
-        return followthrough if elapsed<.15 else neutral
+        if elapsed<.085:return contact
+        extra=sum(f['durationMs'] for f in animation['frames'][:6])/1000+1e-8
+        if elapsed<.103:return extra
+        if elapsed<.155:return followthrough
+        if elapsed<.20:return extra+animation['frames'][6]['durationMs']/1000
+        return neutral
     if seconds<=PARRY_WINDOW:
         return ready if seconds<.035 else guard
     return neutral

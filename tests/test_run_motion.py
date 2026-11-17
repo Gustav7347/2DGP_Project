@@ -21,7 +21,7 @@ class RunMotionTests(unittest.TestCase):
         data=json.loads((root/'animations.json').read_text('utf-8'))['animations']['run']
         self.assertTrue(data['integratedWeapon'])
         self.assertTrue(data['loop'])
-        self.assertEqual(len({tuple(f['rect']) for f in data['frames']}),6)
+        self.assertEqual(len({tuple(f['rect']) for f in data['frames']}),4)
         for f in data['frames']:
             x,y,w,h=f['rect']
             self.assertTrue(0<=x<x+w<=data['size'][0] and 0<=y<y+h<=data['size'][1])
