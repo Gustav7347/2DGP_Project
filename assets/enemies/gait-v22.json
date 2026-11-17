@@ -1,0 +1,338 @@
+{
+  "sword-gait": {
+    "file": "gait-v22.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "referenceBodyHeight": 251,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          251,
+          330
+        ],
+        "anchor": [
+          137,
+          307
+        ],
+        "supportLeg": {
+          "hip": 137,
+          "knee": 175,
+          "sole": 198
+        }
+      },
+      {
+        "rect": [
+          251,
+          0,
+          257,
+          330
+        ],
+        "anchor": [
+          144,
+          307
+        ],
+        "supportLeg": {
+          "hip": 144,
+          "knee": 156,
+          "sole": 164
+        }
+      },
+      {
+        "rect": [
+          508,
+          0,
+          258,
+          330
+        ],
+        "anchor": [
+          141,
+          307
+        ],
+        "supportLeg": {
+          "hip": 141,
+          "knee": 122,
+          "sole": 110
+        }
+      },
+      {
+        "rect": [
+          766,
+          0,
+          257,
+          330
+        ],
+        "anchor": [
+          132,
+          307
+        ],
+        "supportLeg": {
+          "hip": 132,
+          "knee": 165,
+          "sole": 189
+        }
+      },
+      {
+        "rect": [
+          1023,
+          0,
+          257,
+          330
+        ],
+        "anchor": [
+          134,
+          307
+        ],
+        "supportLeg": {
+          "hip": 134,
+          "knee": 142,
+          "sole": 146
+        }
+      },
+      {
+        "rect": [
+          1280,
+          0,
+          256,
+          330
+        ],
+        "anchor": [
+          135,
+          307
+        ],
+        "supportLeg": {
+          "hip": 135,
+          "knee": 116,
+          "sole": 103
+        }
+      }
+    ]
+  },
+  "spear-gait": {
+    "file": "gait-v22.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "referenceBodyHeight": 249,
+    "frames": [
+      {
+        "rect": [
+          0,
+          350,
+          276,
+          324
+        ],
+        "anchor": [
+          121,
+          288
+        ],
+        "supportLeg": {
+          "hip": 121,
+          "knee": 160,
+          "sole": 182
+        }
+      },
+      {
+        "rect": [
+          276,
+          350,
+          259,
+          324
+        ],
+        "anchor": [
+          108,
+          288
+        ],
+        "supportLeg": {
+          "hip": 108,
+          "knee": 117,
+          "sole": 123
+        }
+      },
+      {
+        "rect": [
+          535,
+          350,
+          258,
+          324
+        ],
+        "anchor": [
+          106,
+          288
+        ],
+        "supportLeg": {
+          "hip": 106,
+          "knee": 80,
+          "sole": 60
+        }
+      },
+      {
+        "rect": [
+          793,
+          350,
+          261,
+          324
+        ],
+        "anchor": [
+          103,
+          288
+        ],
+        "supportLeg": {
+          "hip": 103,
+          "knee": 136,
+          "sole": 158
+        }
+      },
+      {
+        "rect": [
+          1054,
+          350,
+          251,
+          324
+        ],
+        "anchor": [
+          100,
+          288
+        ],
+        "supportLeg": {
+          "hip": 100,
+          "knee": 96,
+          "sole": 94
+        }
+      },
+      {
+        "rect": [
+          1305,
+          350,
+          231,
+          324
+        ],
+        "anchor": [
+          106,
+          288
+        ],
+        "supportLeg": {
+          "hip": 106,
+          "knee": 82,
+          "sole": 66
+        }
+      }
+    ]
+  },
+  "boss-gait": {
+    "file": "gait-v22.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "referenceBodyHeight": 274,
+    "frames": [
+      {
+        "rect": [
+          0,
+          688,
+          256,
+          336
+        ],
+        "anchor": [
+          120,
+          298
+        ],
+        "supportLeg": {
+          "hip": 120,
+          "knee": 161,
+          "sole": 186
+        }
+      },
+      {
+        "rect": [
+          256,
+          688,
+          266,
+          336
+        ],
+        "anchor": [
+          126,
+          298
+        ],
+        "supportLeg": {
+          "hip": 126,
+          "knee": 142,
+          "sole": 152
+        }
+      },
+      {
+        "rect": [
+          522,
+          688,
+          258,
+          336
+        ],
+        "anchor": [
+          120,
+          298
+        ],
+        "supportLeg": {
+          "hip": 120,
+          "knee": 98,
+          "sole": 84
+        }
+      },
+      {
+        "rect": [
+          780,
+          688,
+          258,
+          336
+        ],
+        "anchor": [
+          118,
+          298
+        ],
+        "supportLeg": {
+          "hip": 118,
+          "knee": 156,
+          "sole": 180
+        }
+      },
+      {
+        "rect": [
+          1038,
+          688,
+          260,
+          336
+        ],
+        "anchor": [
+          118,
+          298
+        ],
+        "supportLeg": {
+          "hip": 118,
+          "knee": 130,
+          "sole": 138
+        }
+      },
+      {
+        "rect": [
+          1298,
+          688,
+          238,
+          336
+        ],
+        "anchor": [
+          114,
+          298
+        ],
+        "supportLeg": {
+          "hip": 114,
+          "knee": 92,
+          "sole": 78
+        }
+      }
+    ]
+  }
+}

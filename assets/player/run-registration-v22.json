@@ -1,0 +1,240 @@
+{
+  "run": {
+    "file": "run-v22.png",
+    "size": [
+      1774,
+      887
+    ],
+    "referenceBodyHeight": 355,
+    "loop": true,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "anchor": [
+          252,
+          402
+        ],
+        "grip": [
+          274,
+          216
+        ],
+        "swordAngleDeg": 18,
+        "durationMs": 95,
+        "opaqueBounds": [
+          81,
+          47,
+          400,
+          402
+        ],
+        "sourceFrame": 0,
+        "handOverlay": [
+          262,
+          203,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 356,
+          "knee": 322,
+          "hip": 259
+        }
+      },
+      {
+        "rect": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          252,
+          402
+        ],
+        "grip": [
+          274,
+          215
+        ],
+        "swordAngleDeg": 16,
+        "durationMs": 90,
+        "opaqueBounds": [
+          86,
+          47,
+          393,
+          402
+        ],
+        "sourceFrame": 1,
+        "handOverlay": [
+          262,
+          202,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 278,
+          "knee": 299,
+          "hip": 259
+        }
+      },
+      {
+        "rect": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          252,
+          402
+        ],
+        "grip": [
+          277,
+          216
+        ],
+        "swordAngleDeg": 15,
+        "durationMs": 95,
+        "opaqueBounds": [
+          93,
+          47,
+          393,
+          402
+        ],
+        "sourceFrame": 2,
+        "handOverlay": [
+          265,
+          203,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 177,
+          "knee": 204,
+          "hip": 259
+        }
+      },
+      {
+        "rect": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          252,
+          397
+        ],
+        "grip": [
+          274,
+          215
+        ],
+        "swordAngleDeg": 18,
+        "durationMs": 95,
+        "opaqueBounds": [
+          81,
+          47,
+          396,
+          397
+        ],
+        "sourceFrame": 4,
+        "handOverlay": [
+          262,
+          202,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 350,
+          "knee": 319,
+          "hip": 259
+        }
+      },
+      {
+        "rect": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          252,
+          400
+        ],
+        "grip": [
+          270,
+          215
+        ],
+        "swordAngleDeg": 16,
+        "durationMs": 90,
+        "opaqueBounds": [
+          84,
+          42,
+          394,
+          400
+        ],
+        "sourceFrame": 5,
+        "handOverlay": [
+          258,
+          202,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 251,
+          "knee": 283,
+          "hip": 259
+        }
+      },
+      {
+        "rect": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          252,
+          396
+        ],
+        "grip": [
+          273,
+          215
+        ],
+        "swordAngleDeg": 15,
+        "durationMs": 95,
+        "opaqueBounds": [
+          84,
+          47,
+          393,
+          396
+        ],
+        "sourceFrame": 6,
+        "handOverlay": [
+          261,
+          202,
+          24,
+          26
+        ],
+        "supportLeg": {
+          "sole": 177,
+          "knee": 206,
+          "hip": 259
+        }
+      }
+    ],
+    "footContacts": [
+      {
+        "frame": 0,
+        "foot": "near"
+      },
+      {
+        "frame": 3,
+        "foot": "far"
+      }
+    ],
+    "cycleNotes": "Two planted strides and a passing pose per leg. Full-body drawings retain their original limb lengths."
+  }
+}

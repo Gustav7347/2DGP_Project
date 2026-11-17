@@ -1,0 +1,47 @@
+[
+  {
+    "file": "kenney-rpg-source.html",
+    "url": "https://kenney.nl/assets/rpg-audio",
+    "retrieved_utc": "2026-11-08T17:28:45.403171+00:00",
+    "sha256": "c4d5827ee5c9413c86797bf215dc2b80b0b62d196ff5c84c235f034c95f2e31f",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "file": "kenney-impact-source.html",
+    "url": "https://kenney.nl/assets/impact-sounds",
+    "retrieved_utc": "2026-11-08T17:28:46.365149+00:00",
+    "sha256": "de749092fe485ef92d41d01de0188c24e15ab04e08d7a2771d83f4b9005fd238",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "file": "kenney-interface-source.html",
+    "url": "https://kenney.nl/assets/interface-sounds",
+    "retrieved_utc": "2026-11-08T17:28:47.340712+00:00",
+    "sha256": "e9a22cb5918a382988583d7cb9106917af38be7c503d1c8c22e2660c7b8a2e64",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "file": "kenney-support.html",
+    "url": "https://kenney.nl/support",
+    "retrieved_utc": "2026-11-08T17:28:48.051165+00:00",
+    "sha256": "1b8ada40fefa73ff471a7680866af4bc245e1aaba196a6614edb1eebcb2d2f1a",
+    "status": 200,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "file": "rubberduck-source.html",
+    "url": "https://opengameart.org/content/80-cc0-rpg-sfx",
+    "retrieved_utc": "2026-11-08T17:28:48.926970+00:00",
+    "sha256": "219501e2a81fc99fe5c4a6a9f877c156e5b5e2e069dcfec7a0d274721ead677f",
+    "status": 200,
+    "content_type": "text/html; charset=utf-8"
+  },
+  {
+    "file": null,
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.txt",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]
