@@ -5,7 +5,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": true,
@@ -143,7 +143,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": true,
@@ -291,7 +291,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": false,
@@ -429,7 +429,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": false,
@@ -524,25 +524,25 @@
         },
         {
           "rect": [
-            1355,
-            437,
-            217,
-            200
+            0,
+            2169,
+            304,
+            240
           ],
           "anchor": [
-            105,
-            193
+            95,
+            216
           ],
           "durationMs": 65,
           "grip": [
-            105,
-            120
+            172,
+            113
           ],
           "tip": [
-            219,
-            50
+            304,
+            97
           ],
-          "swordAngleDeg": -31.464143630865752
+          "swordAngleDeg": -6.766174822553061
         },
         {
           "rect": [
@@ -581,7 +581,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": false,
@@ -719,7 +719,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": false,
@@ -857,7 +857,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 275,
       "loop": false,
@@ -1053,7 +1053,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 275,
       "loop": false,
@@ -1241,7 +1241,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 275,
       "loop": false,
@@ -1429,7 +1429,7 @@
       "file": "armed-angular.png",
       "size": [
         1800,
-        2167
+        2409
       ],
       "referenceBodyHeight": 173,
       "loop": false,
