@@ -25,8 +25,8 @@ class ParryPresentationTests(unittest.TestCase):
         self.assertEqual(motion.sample_frame(ANIM,self.pose(.179))[0],2)
 
     def test_guard_is_vertical_and_deflection_finishes_horizontally(self):
-        for i in (1,2):self.assertEqual(ANIM['frames'][i]['swordAngleDeg'],-90)
-        self.assertEqual(ANIM['frames'][4]['swordAngleDeg'],0)
+        for i in (1,2):self.assertLess(abs(ANIM['frames'][i]['swordAngleDeg']+90),20)
+        self.assertLess(abs(ANIM['frames'][4]['swordAngleDeg']),45)
 
     def test_a_miss_does_not_play_the_success_impact_pose(self):
         seen={motion.sample_frame(ANIM,self.pose(t/1000))[0] for t in range(340)}

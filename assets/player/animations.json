@@ -2,420 +2,181 @@
   "sourceOrigin": "top-left",
   "animations": {
     "idle": {
-      "file": "idle.png",
+      "file": "armed-hero.png",
       "size": [
-        1536,
-        1024
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 404,
+      "referenceBodyHeight": 173,
       "loop": true,
       "frames": [
         {
           "rect": [
             0,
             0,
-            512,
-            512
+            211,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            115,
+            196
           ],
-          "grip": [
-            160.51,
-            334.73
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 180,
-          "handOverlay": [
-            153,
-            326,
-            16,
-            18
-          ]
+          "durationMs": 180
         },
         {
           "rect": [
-            512,
+            211,
             0,
-            512,
-            512
+            212,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            116,
+            196
           ],
-          "grip": [
-            160.99,
-            332.45
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 180,
-          "handOverlay": [
-            153,
-            323,
-            16,
-            18
-          ]
+          "durationMs": 180
         },
         {
           "rect": [
-            1024,
+            423,
             0,
-            512,
-            512
+            208,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            111,
+            196
           ],
-          "grip": [
-            161.89,
-            329.93
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 200,
-          "handOverlay": [
-            154,
-            321,
-            16,
-            18
-          ]
+          "durationMs": 200
         },
         {
           "rect": [
+            631,
             0,
-            512,
-            512,
-            512
+            209,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            112,
+            196
           ],
-          "grip": [
-            160.5,
-            332.93
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 180,
-          "handOverlay": [
-            152,
-            324,
-            16,
-            18
-          ]
+          "durationMs": 180
         },
         {
           "rect": [
-            512,
-            512,
-            512,
-            512
+            840,
+            0,
+            204,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            111,
+            196
           ],
-          "grip": [
-            161.17,
-            335.62
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 180,
-          "handOverlay": [
-            153,
-            327,
-            16,
-            18
-          ]
+          "durationMs": 180
         },
         {
           "rect": [
-            1024,
-            512,
-            512,
-            512
+            1044,
+            0,
+            210,
+            214
           ],
           "anchor": [
-            165.0,
-            496
+            117,
+            196
           ],
-          "grip": [
-            161.59,
-            334.87
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 200,
-          "handOverlay": [
-            154,
-            326,
-            16,
-            18
-          ]
+          "durationMs": 200
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "run": {
-      "file": "run-v26.png",
+      "file": "armed-hero.png",
       "size": [
-        1774,
-        887
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 390,
+      "referenceBodyHeight": 173,
       "loop": true,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            444,
-            444
+            214,
+            211,
+            201
           ],
           "anchor": [
-            215,
-            415
+            117,
+            189
           ],
-          "grip": [
-            146,
-            220
-          ],
-          "swordAngleDeg": 9,
-          "durationMs": 78,
-          "opaqueBounds": [
-            19,
-            33,
-            418,
-            415
-          ],
-          "sourceFrame": 0,
-          "handOverlay": [
-            133,
-            208,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 358,
-            "knee": 294,
-            "hip": 215
-          }
+          "durationMs": 88
         },
         {
           "rect": [
-            444,
-            0,
-            443,
-            444
-          ],
-          "anchor": [
-            228,
-            417
-          ],
-          "grip": [
-            145,
-            248
-          ],
-          "swordAngleDeg": 8,
-          "durationMs": 95,
-          "opaqueBounds": [
-            20,
-            52,
-            396,
-            417
-          ],
-          "sourceFrame": 1,
-          "handOverlay": [
-            132,
-            236,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 219,
-            "knee": 223,
-            "hip": 228
-          }
-        },
-        {
-          "rect": [
-            887,
-            0,
-            443,
-            444
-          ],
-          "anchor": [
-            221,
-            420
-          ],
-          "grip": [
-            329,
-            180
-          ],
-          "swordAngleDeg": -26,
-          "durationMs": 107,
-          "opaqueBounds": [
-            23,
-            29,
-            412,
-            420
-          ],
-          "sourceFrame": 2,
-          "handOverlay": [
-            316,
-            168,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 64,
-            "knee": 135,
-            "hip": 221
-          }
-        },
-        {
-          "rect": [
-            0,
-            444,
-            444,
-            443
-          ],
-          "anchor": [
+            211,
+            214,
             212,
-            430
+            201
           ],
-          "grip": [
-            333,
-            204
+          "anchor": [
+            110,
+            188
           ],
-          "swordAngleDeg": -40,
-          "durationMs": 76,
-          "opaqueBounds": [
-            17,
-            56,
-            432,
-            430
-          ],
-          "sourceFrame": 4,
-          "handOverlay": [
-            320,
-            192,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 376,
-            "knee": 302,
-            "hip": 212
-          }
+          "durationMs": 103
         },
         {
           "rect": [
-            444,
-            444,
-            443,
-            443
+            423,
+            214,
+            208,
+            201
           ],
           "anchor": [
-            222,
-            428
+            108,
+            187
           ],
-          "grip": [
-            313,
-            203
-          ],
-          "swordAngleDeg": -43,
-          "durationMs": 95,
-          "opaqueBounds": [
-            21,
-            62,
-            403,
-            428
-          ],
-          "sourceFrame": 5,
-          "handOverlay": [
-            300,
-            191,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 177,
-            "knee": 197,
-            "hip": 222
-          }
+          "durationMs": 89
         },
         {
           "rect": [
-            887,
-            444,
-            443,
-            443
+            631,
+            214,
+            209,
+            201
           ],
           "anchor": [
-            223,
-            430
+            116,
+            184
           ],
-          "grip": [
-            134,
-            232
-          ],
-          "swordAngleDeg": 13,
-          "durationMs": 58,
-          "opaqueBounds": [
-            12,
-            54,
-            400,
-            430
-          ],
-          "sourceFrame": 6,
-          "handOverlay": [
-            121,
-            220,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 39,
-            "knee": 122,
-            "hip": 223
-          }
+          "durationMs": 88
         },
         {
           "rect": [
-            1330,
-            444,
-            444,
-            443
+            840,
+            214,
+            204,
+            201
           ],
           "anchor": [
-            223,
-            426
+            114,
+            187
           ],
-          "grip": [
-            144,
-            249
+          "durationMs": 103
+        },
+        {
+          "rect": [
+            1044,
+            214,
+            210,
+            201
           ],
-          "swordAngleDeg": 6,
-          "durationMs": 51,
-          "opaqueBounds": [
-            24,
-            51,
-            431,
-            426
+          "anchor": [
+            118,
+            186
           ],
-          "sourceFrame": 7,
-          "handOverlay": [
-            131,
-            237,
-            26,
-            24
-          ],
-          "supportLeg": {
-            "sole": 46,
-            "knee": 126,
-            "hip": 223
-          }
+          "durationMs": 89
         }
       ],
       "footContacts": [
@@ -428,357 +189,238 @@
           "foot": "far"
         }
       ],
-      "cycleNotes": "Hand and hip anchors are registered per full-body sprint drawing."
+      "integratedWeapon": true
     },
     "jump": {
-      "file": "jump.png",
+      "file": "armed-hero.png",
       "size": [
-        1536,
-        1024
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 404,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            512,
-            512
+            1037,
+            211,
+            217
           ],
           "anchor": [
-            165.0,
-            488
+            112,
+            200
           ],
-          "grip": [
-            154.81,
-            342.77
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 75,
-          "handOverlay": [
-            147,
-            334,
-            16,
-            18
-          ]
+          "durationMs": 75
         },
         {
           "rect": [
-            512,
-            0,
-            512,
-            512
+            211,
+            1037,
+            212,
+            217
           ],
           "anchor": [
-            165.0,
-            488
+            109,
+            165
           ],
-          "grip": [
-            154.01,
-            304.9
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 75,
-          "handOverlay": [
-            146,
-            296,
-            16,
-            18
-          ]
+          "durationMs": 75
         },
         {
           "rect": [
-            1024,
-            0,
-            512,
-            512
+            423,
+            1037,
+            208,
+            217
           ],
           "anchor": [
-            165.0,
-            443
+            99,
+            138
           ],
-          "grip": [
-            159.4,
-            280.88
+          "durationMs": 110
+        },
+        {
+          "rect": [
+            631,
+            1037,
+            196,
+            217
           ],
-          "swordAngleDeg": 21,
-          "durationMs": 110,
-          "handOverlay": [
-            151,
-            272,
-            16,
-            18
-          ]
+          "anchor": [
+            91,
+            200
+          ],
+          "durationMs": 150
+        },
+        {
+          "rect": [
+            631,
+            1037,
+            196,
+            217
+          ],
+          "anchor": [
+            91,
+            200
+          ],
+          "durationMs": 110
         },
         {
           "rect": [
             0,
-            512,
-            512,
-            512
+            1037,
+            211,
+            217
           ],
           "anchor": [
-            165.0,
-            391
+            112,
+            200
           ],
-          "grip": [
-            163.06,
-            272.18
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 150,
-          "handOverlay": [
-            155,
-            263,
-            16,
-            18
-          ]
-        },
-        {
-          "rect": [
-            512,
-            512,
-            512,
-            512
-          ],
-          "anchor": [
-            165.0,
-            466
-          ],
-          "grip": [
-            155.5,
-            285.55
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 110,
-          "handOverlay": [
-            148,
-            277,
-            16,
-            18
-          ]
-        },
-        {
-          "rect": [
-            1024,
-            512,
-            512,
-            512
-          ],
-          "anchor": [
-            165.0,
-            489
-          ],
-          "grip": [
-            153.26,
-            330.88
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 80,
-          "handOverlay": [
-            145,
-            322,
-            16,
-            18
-          ]
+          "durationMs": 80
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "parry": {
-      "file": "parry-guard-sweep-v9.png",
+      "file": "armed-hero.png",
       "size": [
-        1536,
-        1024
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 442,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            512,
-            512
+            837,
+            211,
+            200
           ],
           "anchor": [
-            270,
-            471
+            115,
+            193
           ],
-          "grip": [
-            272.03,
-            273.94
-          ],
-          "swordAngleDeg": 21,
           "durationMs": 35,
-          "opaqueBounds": [
-            156,
-            28,
-            359,
-            471
+          "grip": [
+            109,
+            128
           ],
-          "sourceFrame": 0,
-          "handOverlay": [
-            260,
-            260,
-            24,
-            28
-          ]
+          "tip": [
+            193,
+            112
+          ],
+          "swordAngleDeg": -10.7842978675626
         },
         {
           "rect": [
-            512,
-            0,
-            512,
-            512
+            211,
+            837,
+            212,
+            200
           ],
           "anchor": [
-            270,
-            471
+            117,
+            193
           ],
-          "grip": [
-            279.22,
-            205.49
-          ],
-          "swordAngleDeg": -90,
           "durationMs": 35,
-          "opaqueBounds": [
-            130,
-            33,
-            375,
-            471
+          "grip": [
+            139,
+            100
           ],
-          "sourceFrame": 1,
-          "handOverlay": [
-            267,
-            191,
-            24,
-            28
-          ]
+          "tip": [
+            151,
+            18
+          ],
+          "swordAngleDeg": -81.67434966957316
         },
         {
           "rect": [
-            1024,
-            0,
-            512,
-            512
+            423,
+            837,
+            208,
+            200
           ],
           "anchor": [
-            270,
-            471
+            109,
+            193
           ],
-          "grip": [
-            273.41,
-            204.45
-          ],
-          "swordAngleDeg": -90,
           "durationMs": 50,
-          "opaqueBounds": [
-            122,
-            35,
-            377,
-            471
+          "grip": [
+            129,
+            86
           ],
-          "sourceFrame": 2,
-          "handOverlay": [
-            261,
-            190,
-            24,
-            28
-          ]
+          "tip": [
+            112,
+            10
+          ],
+          "swordAngleDeg": -102.60860679336623
         },
         {
           "rect": [
-            0,
-            512,
-            512,
-            512
+            631,
+            837,
+            209,
+            200
           ],
           "anchor": [
-            270,
-            471
+            109,
+            193
           ],
-          "grip": [
-            345.45,
-            188.6
-          ],
-          "swordAngleDeg": -32,
           "durationMs": 70,
-          "opaqueBounds": [
-            118,
-            41,
-            412,
-            471
+          "grip": [
+            131,
+            96
           ],
-          "sourceFrame": 3,
-          "handOverlay": [
-            333,
-            175,
-            24,
-            28
-          ]
+          "tip": [
+            181,
+            45
+          ],
+          "swordAngleDeg": -45.567266409857936
         },
         {
           "rect": [
-            512,
-            512,
-            512,
-            512
+            840,
+            837,
+            204,
+            200
           ],
           "anchor": [
-            270,
-            471
+            105,
+            193
           ],
-          "grip": [
-            370.83,
-            193.7
-          ],
-          "swordAngleDeg": 0,
           "durationMs": 65,
-          "opaqueBounds": [
-            85,
-            42,
-            398,
-            471
+          "grip": [
+            105,
+            120
           ],
-          "sourceFrame": 4,
-          "handOverlay": [
-            359,
-            180,
-            24,
-            28
-          ]
+          "tip": [
+            172,
+            79
+          ],
+          "swordAngleDeg": -31.464143630865752
         },
         {
           "rect": [
-            1024,
-            512,
-            512,
-            512
+            1044,
+            837,
+            210,
+            200
           ],
           "anchor": [
-            270,
-            471
+            115,
+            193
           ],
-          "grip": [
-            274.48,
-            274.77
-          ],
-          "swordAngleDeg": 21,
           "durationMs": 85,
-          "opaqueBounds": [
-            154,
-            27,
-            360,
-            471
+          "grip": [
+            109,
+            130
           ],
-          "sourceFrame": 5,
-          "handOverlay": [
-            262,
-            261,
-            24,
-            28
-          ]
+          "tip": [
+            197,
+            114
+          ],
+          "swordAngleDeg": -10.304846468766033
         }
       ],
       "poseRoles": [
@@ -788,1023 +430,641 @@
         "sweep-start",
         "horizontal-deflect",
         "neutral"
-      ]
+      ],
+      "integratedWeapon": true
     },
     "hurt": {
-      "file": "hurt.png",
+      "file": "armed-hero.png",
       "size": [
-        1536,
-        1024
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 404,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
-            0,
-            0,
-            512,
-            512
+            631,
+            1037,
+            196,
+            217
           ],
           "anchor": [
-            165.0,
-            498
+            91,
+            200
           ],
-          "grip": [
-            159.04,
-            334.36
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            151,
-            325,
-            16,
-            18
-          ]
+          "durationMs": 30
         },
         {
           "rect": [
-            512,
-            0,
-            512,
-            512
+            827,
+            1037,
+            205,
+            217
           ],
           "anchor": [
-            165.0,
-            498
+            106,
+            199
           ],
-          "grip": [
-            160.55,
-            331.39
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            153,
-            322,
-            16,
-            18
-          ]
+          "durationMs": 30
         },
         {
           "rect": [
-            1024,
-            0,
-            512,
-            512
+            827,
+            1037,
+            205,
+            217
           ],
           "anchor": [
-            165.0,
-            498
+            106,
+            199
           ],
-          "grip": [
-            169.85,
-            325.18
+          "durationMs": 30
+        },
+        {
+          "rect": [
+            827,
+            1037,
+            205,
+            217
           ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            162,
-            316,
-            16,
-            18
-          ]
+          "anchor": [
+            106,
+            199
+          ],
+          "durationMs": 30
+        },
+        {
+          "rect": [
+            631,
+            1037,
+            196,
+            217
+          ],
+          "anchor": [
+            91,
+            200
+          ],
+          "durationMs": 30
         },
         {
           "rect": [
             0,
-            512,
-            512,
-            512
+            837,
+            211,
+            200
           ],
           "anchor": [
-            165.0,
-            498
+            115,
+            193
           ],
-          "grip": [
-            169.97,
-            329.67
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            162,
-            321,
-            16,
-            18
-          ]
-        },
-        {
-          "rect": [
-            512,
-            512,
-            512,
-            512
-          ],
-          "anchor": [
-            165.0,
-            498
-          ],
-          "grip": [
-            160.6,
-            334.13
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            153,
-            325,
-            16,
-            18
-          ]
-        },
-        {
-          "rect": [
-            1024,
-            512,
-            512,
-            512
-          ],
-          "anchor": [
-            165.0,
-            498
-          ],
-          "grip": [
-            158.96,
-            334.47
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 30,
-          "handOverlay": [
-            151,
-            325,
-            16,
-            18
-          ]
+          "durationMs": 30
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "death": {
-      "file": "death.png",
+      "file": "armed-hero.png",
       "size": [
-        1536,
-        1024
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 404,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
-            0,
-            0,
-            512,
-            512
+            827,
+            1037,
+            205,
+            217
           ],
           "anchor": [
-            165.0,
-            497
+            106,
+            199
           ],
-          "grip": [
-            158.31,
-            333.94
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 90,
-          "handOverlay": [
-            150,
-            325,
-            16,
-            18
-          ]
+          "durationMs": 90
         },
         {
           "rect": [
-            512,
-            0,
-            512,
-            512
+            827,
+            1037,
+            205,
+            217
           ],
           "anchor": [
-            165.0,
-            497
+            106,
+            199
           ],
-          "grip": [
-            170.4,
-            342.84
-          ],
-          "swordAngleDeg": 25,
-          "durationMs": 100,
-          "handOverlay": [
-            162,
-            334,
-            16,
-            18
-          ]
-        },
-        {
-          "rect": [
-            1024,
-            0,
-            512,
-            512
-          ],
-          "anchor": [
-            165.0,
-            497
-          ],
-          "grip": [
-            182.93,
-            394.58
-          ],
-          "swordAngleDeg": 10,
-          "durationMs": 120,
-          "handOverlay": [
-            175,
-            386,
-            16,
-            18
-          ]
+          "durationMs": 100
         },
         {
           "rect": [
             0,
-            512,
-            512,
-            512
+            1037,
+            211,
+            217
           ],
           "anchor": [
-            165.0,
-            465
+            112,
+            200
           ],
-          "grip": [
-            205.32,
-            427.56
-          ],
-          "swordAngleDeg": 5,
-          "durationMs": 140,
-          "handOverlay": [
-            197,
-            419,
-            16,
-            18
-          ]
+          "durationMs": 120
         },
         {
           "rect": [
-            512,
-            512,
-            512,
-            512
+            0,
+            1037,
+            211,
+            217
           ],
           "anchor": [
-            165.0,
-            466
+            112,
+            200
           ],
-          "grip": [
-            225.29,
-            444.89
-          ],
-          "swordAngleDeg": 0,
-          "durationMs": 160,
-          "handOverlay": [
-            217,
-            436,
-            16,
-            18
-          ]
+          "durationMs": 140
         },
         {
           "rect": [
-            1024,
-            512,
-            512,
-            512
+            1032,
+            1037,
+            222,
+            217
           ],
           "anchor": [
-            165.0,
-            466
+            118,
+            199
           ],
-          "grip": [
-            225.34,
-            444.97
+          "durationMs": 160
+        },
+        {
+          "rect": [
+            1032,
+            1037,
+            222,
+            217
           ],
-          "swordAngleDeg": 0,
-          "durationMs": 180,
-          "handOverlay": [
-            217,
-            436,
-            16,
-            18
-          ]
+          "anchor": [
+            118,
+            199
+          ],
+          "durationMs": 180
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "attack": {
-      "file": "attack.png",
+      "file": "armed-hero.png",
       "size": [
-        1774,
-        887
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 379,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            444,
-            444
+            415,
+            211,
+            210
           ],
           "anchor": [
-            198.21,
-            417
+            115,
+            199
           ],
-          "grip": [
-            191.35,
-            258.46
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 80,
+          "durationMs": 55,
           "phase": "기본 자세",
-          "opaqueBounds": [
-            110,
-            38,
-            285,
-            417
-          ],
-          "handOverlay": [
-            182,
-            249,
-            18,
-            19
-          ]
-        },
-        {
-          "rect": [
-            444,
-            0,
-            443,
-            444
-          ],
-          "anchor": [
-            197.77,
-            417
-          ],
           "grip": [
-            171.98,
-            224.84
-          ],
-          "swordAngleDeg": -63,
-          "durationMs": 70,
-          "phase": "체중 싣기",
-          "opaqueBounds": [
-            92,
-            46,
-            299,
-            417
-          ],
-          "handOverlay": [
-            163,
-            216,
-            18,
-            19
-          ]
-        },
-        {
-          "rect": [
-            887,
-            0,
-            443,
-            444
-          ],
-          "anchor": [
-            197.77,
-            417
-          ],
-          "grip": [
-            187.65,
-            107.93
-          ],
-          "swordAngleDeg": -152,
-          "durationMs": 85,
-          "phase": "준비 완료",
-          "opaqueBounds": [
             109,
-            44,
-            339,
-            417
+            135
           ],
-          "handOverlay": [
-            179,
-            99,
-            18,
-            19
-          ]
+          "tip": [
+            195,
+            122
+          ],
+          "swordAngleDeg": -8.595911436920971
         },
         {
           "rect": [
-            1330,
-            0,
-            444,
-            444
+            211,
+            415,
+            209,
+            210
           ],
           "anchor": [
-            198.21,
-            417
+            108,
+            199
           ],
+          "durationMs": 72,
+          "phase": "체중 싣기",
           "grip": [
-            297.41,
-            160.11
+            136,
+            104
           ],
-          "swordAngleDeg": -60,
-          "durationMs": 25,
+          "tip": [
+            187,
+            39
+          ],
+          "swordAngleDeg": -51.881723630636955
+        },
+        {
+          "rect": [
+            420,
+            415,
+            211,
+            210
+          ],
+          "anchor": [
+            107,
+            199
+          ],
+          "durationMs": 38,
+          "phase": "준비 완료",
+          "grip": [
+            108,
+            29
+          ],
+          "tip": [
+            18,
+            29
+          ],
+          "swordAngleDeg": 180.0
+        },
+        {
+          "rect": [
+            631,
+            415,
+            208,
+            210
+          ],
+          "anchor": [
+            114,
+            199
+          ],
+          "durationMs": 45,
           "phase": "베기 시작",
-          "opaqueBounds": [
-            72,
-            70,
-            326,
-            417
+          "grip": [
+            149,
+            56
           ],
-          "handOverlay": [
-            288,
-            151,
-            18,
-            19
-          ]
+          "tip": [
+            61,
+            22
+          ],
+          "swordAngleDeg": -158.8752808539275
+        },
+        {
+          "rect": [
+            839,
+            415,
+            226,
+            210
+          ],
+          "anchor": [
+            121,
+            199
+          ],
+          "durationMs": 31,
+          "phase": "타격 구간",
+          "grip": [
+            146,
+            122
+          ],
+          "tip": [
+            218,
+            126
+          ],
+          "swordAngleDeg": 3.1798301198642345
+        },
+        {
+          "rect": [
+            1065,
+            415,
+            189,
+            210
+          ],
+          "anchor": [
+            93,
+            199
+          ],
+          "durationMs": 55,
+          "phase": "후속 동작",
+          "grip": [
+            116,
+            155
+          ],
+          "tip": [
+            187,
+            169
+          ],
+          "swordAngleDeg": 11.154659738928299
+        },
+        {
+          "rect": [
+            1065,
+            415,
+            189,
+            210
+          ],
+          "anchor": [
+            93,
+            199
+          ],
+          "durationMs": 86,
+          "phase": "자세 회수",
+          "grip": [
+            116,
+            155
+          ],
+          "tip": [
+            187,
+            169
+          ],
+          "swordAngleDeg": 11.154659738928299
         },
         {
           "rect": [
             0,
-            444,
-            444,
-            443
+            415,
+            211,
+            210
           ],
           "anchor": [
-            198.21,
-            414
+            115,
+            199
           ],
-          "grip": [
-            298.32,
-            233.09
-          ],
-          "swordAngleDeg": 9,
-          "durationMs": 35,
-          "phase": "타격 구간",
-          "opaqueBounds": [
-            66,
-            77,
-            346,
-            414
-          ],
-          "handOverlay": [
-            289,
-            224,
-            18,
-            19
-          ]
-        },
-        {
-          "rect": [
-            444,
-            444,
-            443,
-            443
-          ],
-          "anchor": [
-            197.77,
-            416
-          ],
-          "grip": [
-            323.28,
-            288.23
-          ],
-          "swordAngleDeg": 22,
-          "durationMs": 90,
-          "phase": "후속 동작",
-          "opaqueBounds": [
-            49,
-            102,
-            353,
-            416
-          ],
-          "handOverlay": [
-            314,
-            279,
-            18,
-            19
-          ]
-        },
-        {
-          "rect": [
-            887,
-            444,
-            443,
-            443
-          ],
-          "anchor": [
-            197.77,
-            416
-          ],
-          "grip": [
-            242.07,
-            257.18
-          ],
-          "swordAngleDeg": 24,
-          "durationMs": 100,
-          "phase": "자세 회수",
-          "opaqueBounds": [
-            79,
-            66,
-            326,
-            416
-          ],
-          "handOverlay": [
-            233,
-            248,
-            18,
-            19
-          ]
-        },
-        {
-          "rect": [
-            1330,
-            444,
-            444,
-            443
-          ],
-          "anchor": [
-            198.21,
-            416
-          ],
-          "grip": [
-            191.44,
-            257.97
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 115,
+          "durationMs": 88,
           "phase": "복귀",
-          "opaqueBounds": [
-            110,
-            40,
-            284,
-            416
+          "grip": [
+            109,
+            135
           ],
-          "handOverlay": [
-            182,
-            249,
-            18,
-            19
-          ]
+          "tip": [
+            195,
+            122
+          ],
+          "swordAngleDeg": -8.595911436920971
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "attack2": {
-      "file": "attack2.png",
+      "file": "armed-hero.png",
       "size": [
-        1774,
-        887
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 379,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            444,
-            444
+            625,
+            218,
+            212
           ],
           "anchor": [
-            198.46800000000002,
-            424
+            115,
+            201
           ],
-          "grip": [
-            318,
-            326
-          ],
-          "swordAngleDeg": 12,
-          "durationMs": 45,
-          "handOverlay": [
-            310,
-            317,
-            16,
-            18
-          ]
+          "durationMs": 35
         },
         {
           "rect": [
-            444,
-            0,
-            443,
-            444
+            218,
+            625,
+            204,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            424
+            100,
+            201
           ],
-          "grip": [
-            190,
-            274
-          ],
-          "swordAngleDeg": -170,
-          "durationMs": 45,
-          "handOverlay": [
-            182,
-            265,
-            16,
-            18
-          ]
+          "durationMs": 44
         },
         {
           "rect": [
-            887,
-            0,
-            443,
-            444
+            218,
+            625,
+            204,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            424
+            100,
+            201
           ],
-          "grip": [
-            196,
-            270
-          ],
-          "swordAngleDeg": -175,
-          "durationMs": 50,
-          "handOverlay": [
-            188,
-            261,
-            16,
-            18
-          ]
+          "durationMs": 53
         },
         {
           "rect": [
-            1330,
-            0,
-            444,
-            444
+            422,
+            625,
+            205,
+            212
           ],
           "anchor": [
-            198.46800000000002,
-            424
+            94,
+            201
           ],
-          "grip": [
-            277,
-            236
-          ],
-          "swordAngleDeg": -5,
-          "durationMs": 25,
-          "handOverlay": [
-            269,
-            227,
-            16,
-            18
-          ]
+          "durationMs": 33
         },
         {
           "rect": [
-            0,
-            444,
-            444,
-            443
+            422,
+            625,
+            205,
+            212
           ],
           "anchor": [
-            198.46800000000002,
-            424
+            94,
+            201
           ],
-          "grip": [
-            314,
-            176
-          ],
-          "swordAngleDeg": -35,
-          "durationMs": 25,
-          "handOverlay": [
-            306,
-            167,
-            16,
-            18
-          ]
+          "durationMs": 29
         },
         {
           "rect": [
-            444,
-            444,
-            443,
-            443
+            627,
+            625,
+            203,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            424
+            102,
+            201
           ],
-          "grip": [
-            344,
-            137
-          ],
-          "swordAngleDeg": -75,
-          "durationMs": 65,
-          "handOverlay": [
-            336,
-            128,
-            16,
-            18
-          ]
+          "durationMs": 49
         },
         {
           "rect": [
-            887,
-            444,
-            443,
-            443
+            627,
+            625,
+            203,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            424
+            102,
+            201
           ],
-          "grip": [
-            333,
-            136
-          ],
-          "swordAngleDeg": -95,
-          "durationMs": 65,
-          "handOverlay": [
-            325,
-            127,
-            16,
-            18
-          ]
+          "durationMs": 94
         },
         {
           "rect": [
-            1330,
-            444,
-            444,
-            443
+            627,
+            625,
+            203,
+            212
           ],
           "anchor": [
-            198.46800000000002,
-            424
+            102,
+            201
           ],
-          "grip": [
-            327,
-            118
-          ],
-          "swordAngleDeg": -105,
-          "durationMs": 110,
-          "handOverlay": [
-            319,
-            109,
-            16,
-            18
-          ]
+          "durationMs": 93
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "attack3": {
-      "file": "attack3.png",
+      "file": "armed-hero.png",
       "size": [
-        1774,
-        887
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 379,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
-            0,
-            0,
-            444,
-            444
+            627,
+            625,
+            203,
+            212
           ],
           "anchor": [
-            198.46800000000002,
-            419
+            102,
+            201
           ],
-          "grip": [
-            159,
-            102
-          ],
-          "swordAngleDeg": -135,
-          "durationMs": 75,
-          "handOverlay": [
-            151,
-            93,
-            16,
-            18
-          ]
+          "durationMs": 58
         },
         {
           "rect": [
-            444,
-            0,
-            443,
-            444
+            830,
+            625,
+            200,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            416
+            107,
+            201
           ],
-          "grip": [
-            156,
-            71
-          ],
-          "swordAngleDeg": -130,
-          "durationMs": 65,
-          "handOverlay": [
-            148,
-            62,
-            16,
-            18
-          ]
+          "durationMs": 91
         },
         {
           "rect": [
-            887,
-            0,
-            443,
-            444
+            830,
+            625,
+            200,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            418
+            107,
+            201
           ],
-          "grip": [
-            180,
-            100
-          ],
-          "swordAngleDeg": -125,
-          "durationMs": 70,
-          "handOverlay": [
-            172,
-            91,
-            16,
-            18
-          ]
+          "durationMs": 51
         },
         {
           "rect": [
-            1330,
-            0,
-            444,
-            444
+            631,
+            415,
+            208,
+            210
           ],
           "anchor": [
-            198.46800000000002,
-            418
+            114,
+            199
           ],
-          "grip": [
-            333,
-            215
-          ],
-          "swordAngleDeg": -55,
-          "durationMs": 25,
-          "handOverlay": [
-            325,
-            206,
-            16,
-            18
-          ]
+          "durationMs": 35
         },
         {
           "rect": [
-            0,
-            444,
-            444,
-            443
-          ],
-          "anchor": [
-            198.46800000000002,
-            418
-          ],
-          "grip": [
-            367,
-            235
-          ],
-          "swordAngleDeg": 5,
-          "durationMs": 30,
-          "handOverlay": [
-            359,
+            839,
+            415,
             226,
-            16,
-            18
-          ]
+            210
+          ],
+          "anchor": [
+            121,
+            199
+          ],
+          "durationMs": 35
         },
         {
           "rect": [
-            444,
-            444,
-            443,
-            443
+            1030,
+            625,
+            224,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            418
+            120,
+            201
           ],
-          "grip": [
-            356,
-            260
-          ],
-          "swordAngleDeg": 24,
-          "durationMs": 110,
-          "handOverlay": [
-            348,
-            251,
-            16,
-            18
-          ]
+          "durationMs": 98
         },
         {
           "rect": [
-            887,
-            444,
-            443,
-            443
+            1030,
+            625,
+            224,
+            212
           ],
           "anchor": [
-            198.02100000000002,
-            419
+            120,
+            201
           ],
-          "grip": [
-            359,
-            262
-          ],
-          "swordAngleDeg": 24,
-          "durationMs": 110,
-          "handOverlay": [
-            351,
-            253,
-            16,
-            18
-          ]
+          "durationMs": 142
         },
         {
           "rect": [
-            1330,
-            444,
-            444,
-            443
+            0,
+            415,
+            211,
+            210
           ],
           "anchor": [
-            198.46800000000002,
-            419
+            115,
+            199
           ],
-          "grip": [
-            215,
-            257
-          ],
-          "swordAngleDeg": 21,
-          "durationMs": 165,
-          "handOverlay": [
-            207,
-            248,
-            16,
-            18
-          ]
+          "durationMs": 140
         }
-      ]
+      ],
+      "integratedWeapon": true
     },
     "brake": {
-      "file": "brake-v26.png",
+      "file": "armed-hero.png",
       "size": [
-        448,
-        448
+        1254,
+        1254
       ],
-      "referenceBodyHeight": 411,
+      "referenceBodyHeight": 173,
       "loop": false,
       "frames": [
         {
           "rect": [
             0,
-            0,
-            448,
-            448
+            415,
+            211,
+            210
           ],
           "anchor": [
-            224,
-            423
+            115,
+            199
           ],
-          "grip": [
-            303,
-            185
-          ],
-          "opaqueBounds": [
-            12,
-            23,
-            402,
-            423
-          ],
-          "durationMs": 67,
-          "swordAngleDeg": -42,
-          "handOverlay": [
-            269,
-            153,
-            67,
-            66
-          ]
+          "durationMs": 67
         }
-      ]
+      ],
+      "integratedWeapon": true
     }
   },
   "weapon": {
