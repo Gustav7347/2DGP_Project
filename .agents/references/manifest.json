@@ -1,0 +1,94 @@
+{
+  "retrieved_on": "2026-11-09",
+  "mode": "project-local reference copies; no global plugin or hooks installed",
+  "files": [
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "docs/codex.md",
+      "blob_sha": "bdb11640e913fb91689a638f79b568cec2742a02",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/docs/codex.md",
+      "local": ".agents/references/egm/docs/codex.md",
+      "local_sha256": "91be58251456904c2542ee1299d1096b569cbc08afdcf24c671eb09b32d09bfc"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "skills/egm-review-loop/SKILL.md",
+      "blob_sha": "7ee4205ad294de89035c31e2d0eeddccf516e5c1",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/skills/egm-review-loop/SKILL.md",
+      "local": ".agents/references/egm/skills/egm-review-loop/SKILL.md",
+      "local_sha256": "844b174055d32a7394f1096964a289987272109fff531a080fc9c3c9acef26fa"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "agents/codebase_details.md",
+      "blob_sha": "67d151455f4be51f45f2fa893883d197c1ff7be8",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/agents/codebase_details.md",
+      "local": ".agents/references/egm/agents/codebase_details.md",
+      "local_sha256": "d80db07e449b57b3b3776d1401cca72a54b6b65a0ab218b86f9064ee4b8167bc"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "agents/implementation_readiness.md",
+      "blob_sha": "51de42969dd7c4816140f55329f15bf88b27d3c1",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/agents/implementation_readiness.md",
+      "local": ".agents/references/egm/agents/implementation_readiness.md",
+      "local_sha256": "1f6aa61cfe7cb86dc94943ab3b3fd339e5baba533937198fd10edb06dfa64e8f"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "resources/document_standards/implementation-readiness-standard.md",
+      "blob_sha": "d883d34cba92a1edb30984ef64eca3548f079643",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/resources/document_standards/implementation-readiness-standard.md",
+      "local": ".agents/references/egm/resources/document_standards/implementation-readiness-standard.md",
+      "local_sha256": "49ef3a44228a14c774ec606477293be6467b232a9e4af9e031a3cad64ed87642"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "resources/document_standards/feature-spec-standard.md",
+      "blob_sha": "580675fd600344ebe2cc22e3b6f3429d475438c1",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/resources/document_standards/feature-spec-standard.md",
+      "local": ".agents/references/egm/resources/document_standards/feature-spec-standard.md",
+      "local_sha256": "8e9821e7bfd7c074dd1cec7ba02e3ea09a3fd32e35b91a1463a37c1ee3b9d6a4"
+    },
+    {
+      "repository": "google/elephant-goldfish-model",
+      "path": "LICENSE",
+      "blob_sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "source_url": "https://github.com/google/elephant-goldfish-model/blob/main/LICENSE",
+      "local": ".agents/references/egm/LICENSE",
+      "local_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "repository": "DietrichGebert/ponytail",
+      "path": "skills/ponytail/SKILL.md",
+      "blob_sha": "d64edd32265ba21cbf5270158f04e97d96925f27",
+      "source_url": "https://github.com/DietrichGebert/ponytail/blob/main/skills/ponytail/SKILL.md",
+      "local": ".agents/references/ponytail/SKILL.md",
+      "local_sha256": "9badd22a32e19cb884e46dfa8d3aae82bb81dfa5484105b8b4f0262df823a509"
+    },
+    {
+      "repository": "DietrichGebert/ponytail",
+      "path": "LICENSE",
+      "blob_sha": "715d483338cea4365f0d91a27799cf61226d6bcf",
+      "source_url": "https://github.com/DietrichGebert/ponytail/blob/main/LICENSE",
+      "local": ".agents/references/ponytail/LICENSE",
+      "local_sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+    },
+    {
+      "repository": "anthropics/skills",
+      "path": "skills/frontend-design/SKILL.md",
+      "source_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+      "local": ".agents/references/frontend-design/SKILL.md",
+      "local_sha256": "d13da26c72b1a4e2a7a767904bccdc3f7fd2b62628aea89341a40c60d1191813",
+      "git_blob_sha1": "62ce4230c761c0b1e1abe90f72148c55ce094059"
+    },
+    {
+      "repository": "anthropics/skills",
+      "path": "skills/frontend-design/LICENSE.txt",
+      "source_url": "https://github.com/anthropics/skills/blob/main/skills/frontend-design/LICENSE.txt",
+      "local": ".agents/references/frontend-design/LICENSE.txt",
+      "local_sha256": "809fa1ed21450f59827d1e9aec720bbc4b687434fa22283c6cb5dd82a47ab9c0",
+      "git_blob_sha1": "e454a52586f29b8ce8a6799163eac1f875e9ac01"
+    }
+  ]
+}

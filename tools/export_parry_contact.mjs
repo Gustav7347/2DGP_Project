@@ -1,0 +1,16 @@
+import {pathToFileURL} from 'node:url';
+import {resolve,join} from 'node:path';
+import * as mod from './parry_contact_fx.mjs';
+import assert from 'node:assert/strict';
+const root=resolve(process.argv[2]??'../vendor/pixelfx');
+const {renderFrames,spriteSheet,save}=await import(pathToFileURL(join(root,'tools/lib/fxlib.mjs')));
+const fx={id:'impacts/blade-contact',mod,meta:mod.meta};
+const rendered=renderFrames(fx,{actor:false,bg:'none'});
+const again=renderFrames(fx,{actor:false,bg:'none'});
+assert.deepEqual(rendered.frames.map(f=>f.raw),again.frames.map(f=>f.raw));
+assert(rendered.frames[0].raw.some(c=>c>>>24));
+assert(!rendered.frames.at(-1).raw.some(c=>c>>>24));
+const sheet=spriteSheet(fx,rendered,'parry');
+save(resolve('assets/fx/parry.png'),sheet.png);
+save(resolve('assets/fx/parry.json'),JSON.stringify(sheet.json,null,1));
+console.log(rendered.n+' frames; deterministic, visible contact, empty ending; PNG/JSON exported');

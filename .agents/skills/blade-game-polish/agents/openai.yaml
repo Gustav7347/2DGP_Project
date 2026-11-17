@@ -1,0 +1,4 @@
+interface:
+  display_name: "벼랑 아래 칼날 개선"
+  short_description: "기획 기준으로 게임을 실행하고 입력·모션·전투·소리를 점검하며 개선"
+  default_prompt: "$blade-game-polish로 기획을 유지하면서 게임의 개선점을 찾아 수정하고 재검증해줘."

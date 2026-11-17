@@ -1,0 +1,19 @@
+{
+  "project": "https://github.com/quiple/galmuri",
+  "release": "v2.40.4",
+  "license": "SIL OFL 1.1",
+  "files": [
+    {
+      "file": "Galmuri9.ttf",
+      "sha256": "e84e821b18be15b9e3a907ceb83cfba25fabf51c80b7edf0d2921cf8f8e1a11d"
+    },
+    {
+      "file": "Galmuri11.ttf",
+      "sha256": "e24256f42e43713d2ea086a1e1669d78b968f5b3cc547e5c157f0606ffa5def1"
+    },
+    {
+      "file": "Galmuri11-Bold.ttf",
+      "sha256": "45d901e379138dd91873af157640f60aa4cf6beaa885c3efd2a8c279e039a237"
+    }
+  ]
+}

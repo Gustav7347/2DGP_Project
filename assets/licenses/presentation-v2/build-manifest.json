@@ -1,0 +1,872 @@
+{
+  "version": 2,
+  "license": "CC0-1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "format": {
+    "rate": 44100,
+    "channels": 1,
+    "bits": 16
+  },
+  "decoder": "system Python pico2d SDL_mixer, dummy audio device",
+  "listened": false,
+  "game_configuration_modified": false,
+  "packs": {
+    "rubberduck": {
+      "archive": "source-presentation-v2-rubberduck-rpg.zip",
+      "sha256": "1c2f06ff4e8563b5b8b745b23cf213c1474142a69bb82bd8f5e10d9b3f7a7bbd",
+      "author": "rubberduck",
+      "page": "https://opengameart.org/content/80-cc0-rpg-sfx",
+      "download": "https://opengameart.org/sites/default/files/80-CC0-RPG-SFX_0.zip",
+      "license": "CC0-1.0",
+      "members": [
+        "blade_01.ogg",
+        "blade_02.ogg",
+        "blade_03.ogg",
+        "book_01.ogg",
+        "book_02.ogg",
+        "book_03.ogg",
+        "book_04.ogg",
+        "chain_01.ogg",
+        "chain_02.ogg",
+        "chain_03.ogg",
+        "creature_die_01.ogg",
+        "creature_hurt_01.ogg",
+        "creature_hurt_02.ogg",
+        "creature_misc_01.ogg",
+        "creature_misc_02.ogg",
+        "creature_misc_03.ogg",
+        "creature_misc_04.ogg",
+        "creature_misc_05.ogg",
+        "creature_misc_06.ogg",
+        "creature_misc_07.ogg",
+        "creature_misc_08.ogg",
+        "creature_monster_01.ogg",
+        "creature_monster_02.ogg",
+        "creature_monster_03.ogg",
+        "creature_monster_04.ogg",
+        "creature_roar_01.ogg",
+        "creature_roar_02.ogg",
+        "creature_roar_03.ogg",
+        "creature_slime_01.ogg",
+        "creature_slime_02.ogg",
+        "creature_slime_03.ogg",
+        "creature_slime_04.ogg",
+        "item_coins_01.ogg",
+        "item_coins_02.ogg",
+        "item_coins_03.ogg",
+        "item_coins_04.ogg",
+        "item_gem_01.ogg",
+        "item_gem_02.ogg",
+        "item_gem_03.ogg",
+        "item_gem_04.ogg",
+        "item_misc_01.ogg",
+        "item_misc_02.ogg",
+        "item_misc_03.ogg",
+        "item_misc_04.ogg",
+        "item_misc_05.ogg",
+        "item_misc_06.ogg",
+        "item_stone_01.ogg",
+        "item_stone_02.ogg",
+        "item_stone_03.ogg",
+        "item_stone_04.ogg",
+        "item_wood_01.ogg",
+        "item_wood_02.ogg",
+        "item_wood_03.ogg",
+        "lock_01.ogg",
+        "lock_02.ogg",
+        "lock_03.ogg",
+        "metal_01.ogg",
+        "metal_02.ogg",
+        "metal_03.ogg",
+        "misc_01.ogg",
+        "misc_02.ogg",
+        "misc_03.ogg",
+        "spell_01.ogg",
+        "spell_02.ogg",
+        "spell_fire_01.ogg",
+        "spell_fire_02.ogg",
+        "spell_fire_03.ogg",
+        "spell_fire_04.ogg",
+        "spell_fire_05.ogg",
+        "spell_fire_06.ogg",
+        "spell_fire_07.ogg",
+        "stones_01.ogg",
+        "stones_02.ogg",
+        "stones_03.ogg",
+        "stones_04.ogg",
+        "wood_01.ogg",
+        "wood_02.ogg",
+        "wood_03.ogg",
+        "wood_04.ogg",
+        "wood_05.ogg"
+      ]
+    },
+    "rpg": {
+      "archive": "source-presentation-v2-kenney-rpg.zip",
+      "sha256": "6dbeaf8544da958d8f2adcb4a4a4b76c1ade34a05f8ab9edccd327da7375f38b",
+      "author": "Kenney Vleugels / Kenney",
+      "page": "https://kenney.nl/assets/rpg-audio",
+      "license": "CC0-1.0",
+      "members": [
+        "License.txt",
+        "Preview.ogg",
+        "Visit Kenney.url",
+        "Visit Patreon.url",
+        "Audio/",
+        "Audio/beltHandle1.ogg",
+        "Audio/beltHandle2.ogg",
+        "Audio/bookClose.ogg",
+        "Audio/bookFlip1.ogg",
+        "Audio/bookFlip2.ogg",
+        "Audio/bookFlip3.ogg",
+        "Audio/bookOpen.ogg",
+        "Audio/bookPlace1.ogg",
+        "Audio/bookPlace2.ogg",
+        "Audio/bookPlace3.ogg",
+        "Audio/chop.ogg",
+        "Audio/cloth1.ogg",
+        "Audio/cloth2.ogg",
+        "Audio/cloth3.ogg",
+        "Audio/cloth4.ogg",
+        "Audio/clothBelt.ogg",
+        "Audio/clothBelt2.ogg",
+        "Audio/creak1.ogg",
+        "Audio/creak2.ogg",
+        "Audio/creak3.ogg",
+        "Audio/doorClose_1.ogg",
+        "Audio/doorClose_2.ogg",
+        "Audio/doorClose_3.ogg",
+        "Audio/doorClose_4.ogg",
+        "Audio/doorOpen_1.ogg",
+        "Audio/doorOpen_2.ogg",
+        "Audio/drawKnife1.ogg",
+        "Audio/drawKnife2.ogg",
+        "Audio/drawKnife3.ogg",
+        "Audio/dropLeather.ogg",
+        "Audio/footstep00.ogg",
+        "Audio/footstep01.ogg",
+        "Audio/footstep02.ogg",
+        "Audio/footstep03.ogg",
+        "Audio/footstep04.ogg",
+        "Audio/footstep05.ogg",
+        "Audio/footstep06.ogg",
+        "Audio/footstep07.ogg",
+        "Audio/footstep08.ogg",
+        "Audio/footstep09.ogg",
+        "Audio/handleCoins.ogg",
+        "Audio/handleCoins2.ogg",
+        "Audio/handleSmallLeather.ogg",
+        "Audio/handleSmallLeather2.ogg",
+        "Audio/knifeSlice.ogg",
+        "Audio/knifeSlice2.ogg",
+        "Audio/metalClick.ogg",
+        "Audio/metalLatch.ogg",
+        "Audio/metalPot1.ogg",
+        "Audio/metalPot2.ogg",
+        "Audio/metalPot3.ogg"
+      ]
+    },
+    "impact": {
+      "archive": "source-presentation-v2-kenney-impact.zip",
+      "sha256": "029d734af1582474edf3a694d1b0cebc97c1c152f2f39fa34d4c2bafc5de77f8",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/impact-sounds",
+      "license": "CC0-1.0",
+      "members": [
+        "Audio/",
+        "Audio/footstep_carpet_000.ogg",
+        "Audio/footstep_carpet_001.ogg",
+        "Audio/footstep_carpet_002.ogg",
+        "Audio/footstep_carpet_003.ogg",
+        "Audio/footstep_carpet_004.ogg",
+        "Audio/footstep_concrete_000.ogg",
+        "Audio/footstep_concrete_001.ogg",
+        "Audio/footstep_concrete_002.ogg",
+        "Audio/footstep_concrete_003.ogg",
+        "Audio/footstep_concrete_004.ogg",
+        "Audio/footstep_grass_000.ogg",
+        "Audio/footstep_grass_001.ogg",
+        "Audio/footstep_grass_002.ogg",
+        "Audio/footstep_grass_003.ogg",
+        "Audio/footstep_grass_004.ogg",
+        "Audio/footstep_snow_000.ogg",
+        "Audio/footstep_snow_001.ogg",
+        "Audio/footstep_snow_002.ogg",
+        "Audio/footstep_snow_003.ogg",
+        "Audio/footstep_snow_004.ogg",
+        "Audio/footstep_wood_000.ogg",
+        "Audio/footstep_wood_001.ogg",
+        "Audio/footstep_wood_002.ogg",
+        "Audio/footstep_wood_003.ogg",
+        "Audio/footstep_wood_004.ogg",
+        "Audio/impactBell_heavy_000.ogg",
+        "Audio/impactBell_heavy_001.ogg",
+        "Audio/impactBell_heavy_002.ogg",
+        "Audio/impactBell_heavy_003.ogg",
+        "Audio/impactBell_heavy_004.ogg",
+        "Audio/impactGeneric_light_000.ogg",
+        "Audio/impactGeneric_light_001.ogg",
+        "Audio/impactGeneric_light_002.ogg",
+        "Audio/impactGeneric_light_003.ogg",
+        "Audio/impactGeneric_light_004.ogg",
+        "Audio/impactGlass_heavy_000.ogg",
+        "Audio/impactGlass_heavy_001.ogg",
+        "Audio/impactGlass_heavy_002.ogg",
+        "Audio/impactGlass_heavy_003.ogg",
+        "Audio/impactGlass_heavy_004.ogg",
+        "Audio/impactGlass_light_000.ogg",
+        "Audio/impactGlass_light_001.ogg",
+        "Audio/impactGlass_light_002.ogg",
+        "Audio/impactGlass_light_003.ogg",
+        "Audio/impactGlass_light_004.ogg",
+        "Audio/impactGlass_medium_000.ogg",
+        "Audio/impactGlass_medium_001.ogg",
+        "Audio/impactGlass_medium_002.ogg",
+        "Audio/impactGlass_medium_003.ogg",
+        "Audio/impactGlass_medium_004.ogg",
+        "Audio/impactMetal_heavy_000.ogg",
+        "Audio/impactMetal_heavy_001.ogg",
+        "Audio/impactMetal_heavy_002.ogg",
+        "Audio/impactMetal_heavy_003.ogg",
+        "Audio/impactMetal_heavy_004.ogg",
+        "Audio/impactMetal_light_000.ogg",
+        "Audio/impactMetal_light_001.ogg",
+        "Audio/impactMetal_light_002.ogg",
+        "Audio/impactMetal_light_003.ogg",
+        "Audio/impactMetal_light_004.ogg",
+        "Audio/impactMetal_medium_000.ogg",
+        "Audio/impactMetal_medium_001.ogg",
+        "Audio/impactMetal_medium_002.ogg",
+        "Audio/impactMetal_medium_003.ogg",
+        "Audio/impactMetal_medium_004.ogg",
+        "Audio/impactMining_000.ogg",
+        "Audio/impactMining_001.ogg",
+        "Audio/impactMining_002.ogg",
+        "Audio/impactMining_003.ogg",
+        "Audio/impactMining_004.ogg",
+        "Audio/impactPlank_medium_000.ogg",
+        "Audio/impactPlank_medium_001.ogg",
+        "Audio/impactPlank_medium_002.ogg",
+        "Audio/impactPlank_medium_003.ogg",
+        "Audio/impactPlank_medium_004.ogg",
+        "Audio/impactPlate_heavy_000.ogg",
+        "Audio/impactPlate_heavy_001.ogg",
+        "Audio/impactPlate_heavy_002.ogg",
+        "Audio/impactPlate_heavy_003.ogg",
+        "Audio/impactPlate_heavy_004.ogg",
+        "Audio/impactPlate_light_000.ogg",
+        "Audio/impactPlate_light_001.ogg",
+        "Audio/impactPlate_light_002.ogg",
+        "Audio/impactPlate_light_003.ogg",
+        "Audio/impactPlate_light_004.ogg",
+        "Audio/impactPlate_medium_000.ogg",
+        "Audio/impactPlate_medium_001.ogg",
+        "Audio/impactPlate_medium_002.ogg",
+        "Audio/impactPlate_medium_003.ogg",
+        "Audio/impactPlate_medium_004.ogg",
+        "Audio/impactPunch_heavy_000.ogg",
+        "Audio/impactPunch_heavy_001.ogg",
+        "Audio/impactPunch_heavy_002.ogg",
+        "Audio/impactPunch_heavy_003.ogg",
+        "Audio/impactPunch_heavy_004.ogg",
+        "Audio/impactPunch_medium_000.ogg",
+        "Audio/impactPunch_medium_001.ogg",
+        "Audio/impactPunch_medium_002.ogg",
+        "Audio/impactPunch_medium_003.ogg",
+        "Audio/impactPunch_medium_004.ogg",
+        "Audio/impactSoft_heavy_000.ogg",
+        "Audio/impactSoft_heavy_001.ogg",
+        "Audio/impactSoft_heavy_002.ogg",
+        "Audio/impactSoft_heavy_003.ogg",
+        "Audio/impactSoft_heavy_004.ogg",
+        "Audio/impactSoft_medium_000.ogg",
+        "Audio/impactSoft_medium_001.ogg",
+        "Audio/impactSoft_medium_002.ogg",
+        "Audio/impactSoft_medium_003.ogg",
+        "Audio/impactSoft_medium_004.ogg",
+        "Audio/impactTin_medium_000.ogg",
+        "Audio/impactTin_medium_001.ogg",
+        "Audio/impactTin_medium_002.ogg",
+        "Audio/impactTin_medium_003.ogg",
+        "Audio/impactTin_medium_004.ogg",
+        "Audio/impactWood_heavy_000.ogg",
+        "Audio/impactWood_heavy_001.ogg",
+        "Audio/impactWood_heavy_002.ogg",
+        "Audio/impactWood_heavy_003.ogg",
+        "Audio/impactWood_heavy_004.ogg",
+        "Audio/impactWood_light_000.ogg",
+        "Audio/impactWood_light_001.ogg",
+        "Audio/impactWood_light_002.ogg",
+        "Audio/impactWood_light_003.ogg",
+        "Audio/impactWood_light_004.ogg",
+        "Audio/impactWood_medium_000.ogg",
+        "Audio/impactWood_medium_001.ogg",
+        "Audio/impactWood_medium_002.ogg",
+        "Audio/impactWood_medium_003.ogg",
+        "Audio/impactWood_medium_004.ogg",
+        "Kenney.url",
+        "License.txt",
+        "Patreon.url"
+      ]
+    },
+    "interface": {
+      "archive": "source-presentation-v2-kenney-interface.zip",
+      "sha256": "f2193d072726d6758a5f7871b2dcc54dcce0d5c35c6f0a62f92549b327c81232",
+      "author": "Kenney",
+      "page": "https://kenney.nl/assets/interface-sounds",
+      "license": "CC0-1.0",
+      "members": [
+        "License.txt",
+        "Patreon.url",
+        "Audio/",
+        "Audio/back_001.ogg",
+        "Audio/back_002.ogg",
+        "Audio/back_003.ogg",
+        "Audio/back_004.ogg",
+        "Audio/bong_001.ogg",
+        "Audio/click_001.ogg",
+        "Audio/click_002.ogg",
+        "Audio/click_003.ogg",
+        "Audio/click_004.ogg",
+        "Audio/click_005.ogg",
+        "Audio/close_001.ogg",
+        "Audio/close_002.ogg",
+        "Audio/close_003.ogg",
+        "Audio/close_004.ogg",
+        "Audio/confirmation_001.ogg",
+        "Audio/confirmation_002.ogg",
+        "Audio/confirmation_003.ogg",
+        "Audio/confirmation_004.ogg",
+        "Audio/drop_001.ogg",
+        "Audio/drop_002.ogg",
+        "Audio/drop_003.ogg",
+        "Audio/drop_004.ogg",
+        "Audio/error_001.ogg",
+        "Audio/error_002.ogg",
+        "Audio/error_003.ogg",
+        "Audio/error_004.ogg",
+        "Audio/error_005.ogg",
+        "Audio/error_006.ogg",
+        "Audio/error_007.ogg",
+        "Audio/error_008.ogg",
+        "Audio/glass_001.ogg",
+        "Audio/glass_002.ogg",
+        "Audio/glass_003.ogg",
+        "Audio/glass_004.ogg",
+        "Audio/glass_005.ogg",
+        "Audio/glass_006.ogg",
+        "Audio/glitch_001.ogg",
+        "Audio/glitch_002.ogg",
+        "Audio/glitch_003.ogg",
+        "Audio/glitch_004.ogg",
+        "Audio/maximize_001.ogg",
+        "Audio/maximize_002.ogg",
+        "Audio/maximize_003.ogg",
+        "Audio/maximize_004.ogg",
+        "Audio/maximize_005.ogg",
+        "Audio/maximize_006.ogg",
+        "Audio/maximize_007.ogg",
+        "Audio/maximize_008.ogg",
+        "Audio/maximize_009.ogg",
+        "Audio/minimize_001.ogg",
+        "Audio/minimize_002.ogg",
+        "Audio/minimize_003.ogg",
+        "Audio/minimize_004.ogg",
+        "Audio/minimize_005.ogg",
+        "Audio/minimize_006.ogg",
+        "Audio/minimize_007.ogg",
+        "Audio/minimize_008.ogg",
+        "Audio/minimize_009.ogg",
+        "Audio/open_001.ogg",
+        "Audio/open_002.ogg",
+        "Audio/open_003.ogg",
+        "Audio/open_004.ogg",
+        "Audio/pluck_001.ogg",
+        "Audio/pluck_002.ogg",
+        "Audio/question_001.ogg",
+        "Audio/question_002.ogg",
+        "Audio/question_003.ogg",
+        "Audio/question_004.ogg",
+        "Audio/scratch_001.ogg",
+        "Audio/scratch_002.ogg",
+        "Audio/scratch_003.ogg",
+        "Audio/scratch_004.ogg",
+        "Audio/scratch_005.ogg",
+        "Audio/scroll_001.ogg",
+        "Audio/scroll_002.ogg",
+        "Audio/scroll_003.ogg",
+        "Audio/scroll_004.ogg",
+        "Audio/scroll_005.ogg",
+        "Audio/select_001.ogg",
+        "Audio/select_002.ogg",
+        "Audio/select_003.ogg",
+        "Audio/select_004.ogg",
+        "Audio/select_005.ogg",
+        "Audio/select_006.ogg",
+        "Audio/select_007.ogg",
+        "Audio/select_008.ogg",
+        "Audio/switch_001.ogg",
+        "Audio/switch_002.ogg",
+        "Audio/switch_003.ogg",
+        "Audio/switch_004.ogg",
+        "Audio/switch_005.ogg",
+        "Audio/switch_006.ogg",
+        "Audio/switch_007.ogg",
+        "Audio/tick_001.ogg",
+        "Audio/tick_002.ogg",
+        "Audio/tick_004.ogg",
+        "Audio/toggle_001.ogg",
+        "Audio/toggle_002.ogg",
+        "Audio/toggle_003.ogg",
+        "Audio/toggle_004.ogg",
+        "Kenney.url"
+      ]
+    }
+  },
+  "sources": [
+    {
+      "key": "blade1",
+      "file": "source-presentation-v2-rubberduck-blade_01.ogg",
+      "pack": "rubberduck",
+      "member": "blade_01.ogg",
+      "sha256": "caf7a7cb9b25cda4bd487c1d12d18b74a34bb18c816fd67277cf3c8d7ef32a3a"
+    },
+    {
+      "key": "blade2",
+      "file": "source-presentation-v2-rubberduck-blade_02.ogg",
+      "pack": "rubberduck",
+      "member": "blade_02.ogg",
+      "sha256": "c770afec8f62f14d3d082d5437c5cec28e2751d393df645ddd938eabc2588abd"
+    },
+    {
+      "key": "blade3",
+      "file": "source-presentation-v2-rubberduck-blade_03.ogg",
+      "pack": "rubberduck",
+      "member": "blade_03.ogg",
+      "sha256": "2cd9e6926f4602a4350e703eeae4df520053e290f358ab692632d651ad368a7c"
+    },
+    {
+      "key": "slice1",
+      "file": "source-presentation-v2-kenney-rpg-knifeSlice.ogg",
+      "pack": "rpg",
+      "member": "Audio/knifeSlice.ogg",
+      "sha256": "4cd96dc630bed9840c15f1dd2306da2cc56a4da26a5d3f1a03c5a7265ac5e54f"
+    },
+    {
+      "key": "slice2",
+      "file": "source-presentation-v2-kenney-rpg-knifeSlice2.ogg",
+      "pack": "rpg",
+      "member": "Audio/knifeSlice2.ogg",
+      "sha256": "6c2064d0ef988d1ec3d56868e823ea8823a5cac00f2742560052633529407def"
+    },
+    {
+      "key": "chop",
+      "file": "source-presentation-v2-kenney-rpg-chop.ogg",
+      "pack": "rpg",
+      "member": "Audio/chop.ogg",
+      "sha256": "d00c2b3c9fff07e376145c8c8c45c90e5084ec192f6ce0387db233f7b86f1486"
+    },
+    {
+      "key": "footstep1",
+      "file": "source-presentation-v2-kenney-rpg-footstep00.ogg",
+      "pack": "rpg",
+      "member": "Audio/footstep00.ogg",
+      "sha256": "6fe61ef1fc3bcf0e253bf2eb64759db6cb69e2fe452f4d88cc597ecf78a3d601"
+    },
+    {
+      "key": "footstep2",
+      "file": "source-presentation-v2-kenney-rpg-footstep01.ogg",
+      "pack": "rpg",
+      "member": "Audio/footstep01.ogg",
+      "sha256": "313472dba31fd0c855376069fa368bb5a198c27251cc8398ef464578b7047a4c"
+    },
+    {
+      "key": "cloth1",
+      "file": "source-presentation-v2-kenney-rpg-cloth1.ogg",
+      "pack": "rpg",
+      "member": "Audio/cloth1.ogg",
+      "sha256": "ddb93a3671233f95da0e0b10367f082f7eb42fa6caaddcf776410aa8833c747d"
+    },
+    {
+      "key": "cloth2",
+      "file": "source-presentation-v2-kenney-rpg-cloth2.ogg",
+      "pack": "rpg",
+      "member": "Audio/cloth2.ogg",
+      "sha256": "8a7451193c38bc05483aec25dd193e163a15d44cf7fff04ac7912573231b0201"
+    },
+    {
+      "key": "metal1",
+      "file": "source-presentation-v2-kenney-impact-impactMetal_medium_000.ogg",
+      "pack": "impact",
+      "member": "Audio/impactMetal_medium_000.ogg",
+      "sha256": "a96f879fec0864a8938e0c745b6996a6c5679c16a234ce31a01cc995e8401003"
+    },
+    {
+      "key": "metal2",
+      "file": "source-presentation-v2-kenney-impact-impactMetal_medium_003.ogg",
+      "pack": "impact",
+      "member": "Audio/impactMetal_medium_003.ogg",
+      "sha256": "2a185e2e57211d02c1bdd33b872d6b6a2fe83e6c14f4e56f426a95e717acf08e"
+    },
+    {
+      "key": "metal3",
+      "file": "source-presentation-v2-kenney-impact-impactMetal_light_000.ogg",
+      "pack": "impact",
+      "member": "Audio/impactMetal_light_000.ogg",
+      "sha256": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d"
+    },
+    {
+      "key": "select",
+      "file": "source-presentation-v2-kenney-interface-select_003.ogg",
+      "pack": "interface",
+      "member": "Audio/select_003.ogg",
+      "sha256": "9a612fd2f513d52a296906b41071c990f75defe56be3bee60d2d4e2423b51b8b"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "presentation-v2-swing-1.wav",
+      "seconds": 0.2,
+      "peak": 0.339996337890625,
+      "rms": 0.023192266565280607,
+      "dc": -1.0726132901077098e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.08026674906750843,
+      "energy_after_150ms": 1.8669787453603223e-05,
+      "sha256": "519aa0c49c0480e2e92f273860f2fbf3d0fc6c0655bd413f71eb36929d9453bd",
+      "layers": [
+        {
+          "source": "blade1",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-swing-2.wav",
+      "seconds": 0.22,
+      "peak": 0.339996337890625,
+      "rms": 0.04087657923014469,
+      "dc": 6.605536390692641e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.2194383275047303,
+      "energy_after_150ms": 0.0009213464073208254,
+      "sha256": "984aebf927fbd3e2e72c5dd32e430fa54ebf9b3a2f93146198c5754fecc1f41c",
+      "layers": [
+        {
+          "source": "blade2",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-swing-3.wav",
+      "seconds": 0.26,
+      "peak": 0.339996337890625,
+      "rms": 0.020117458774479357,
+      "dc": 4.7908285910518056e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.17735433643352733,
+      "energy_after_150ms": 0.0004868503785790371,
+      "sha256": "7f9eb8e54dbae7fb8f72eae3bbd965e136a6d4bc6b81831db6930c59afbd0573",
+      "layers": [
+        {
+          "source": "blade3",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-impact-1.wav",
+      "seconds": 0.24,
+      "peak": 0.439971923828125,
+      "rms": 0.059178855768299295,
+      "dc": 1.1245139331774377e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.030183366476019057,
+      "energy_after_150ms": 0.0006663390921279268,
+      "sha256": "0813d0515413d74549841a3b812a9f938907147dc22c34f80d936abfc1ff793a",
+      "layers": [
+        {
+          "source": "slice1",
+          "gain": 0.72,
+          "speed": 1.04,
+          "delay": 0.004,
+          "offset_after_trim": 0.085
+        },
+        {
+          "source": "chop",
+          "gain": 0.48,
+          "speed": 1.04
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-impact-2.wav",
+      "seconds": 0.27,
+      "peak": 0.439971923828125,
+      "rms": 0.06294271727254525,
+      "dc": -2.819294191442009e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.029544877277248322,
+      "energy_after_150ms": 0.00048167177918460337,
+      "sha256": "abd4b0511fc1c1c7426dab6f2e0c7c38047ae2f693b67c6728174cec712a2164",
+      "layers": [
+        {
+          "source": "slice2",
+          "gain": 0.72,
+          "speed": 1.0,
+          "delay": 0.004,
+          "offset_after_trim": 0.18
+        },
+        {
+          "source": "chop",
+          "gain": 0.48,
+          "speed": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-impact-3.wav",
+      "seconds": 0.32,
+      "peak": 0.439971923828125,
+      "rms": 0.06562613248897795,
+      "dc": 7.785096460459183e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.019676433863490852,
+      "energy_after_150ms": 0.0013607005109333257,
+      "sha256": "a66b6cb5d1d58ee53bb7bf3fd35793bf5c6ce42eb1df0b46cf5c648be57f1b69",
+      "layers": [
+        {
+          "source": "slice2",
+          "gain": 0.72,
+          "speed": 0.91,
+          "delay": 0.004,
+          "offset_after_trim": 0.18
+        },
+        {
+          "source": "chop",
+          "gain": 0.48,
+          "speed": 0.91
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-parry-1.wav",
+      "seconds": 0.18,
+      "peak": 0.379974365234375,
+      "rms": 0.04657782345242325,
+      "dc": 8.842331782249937e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 6.848668126192069e-05,
+      "energy_after_150ms": 1.5682982310163408e-07,
+      "sha256": "a56c3a31ba3beaaebda939fb266867d86a69c87ad4b7a4ef191e7625d2d465ed",
+      "layers": [
+        {
+          "source": "metal1",
+          "gain": 0.84
+        },
+        {
+          "source": "chop",
+          "gain": 0.16,
+          "speed": 1.1
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-parry-2.wav",
+      "seconds": 0.19,
+      "peak": 0.379974365234375,
+      "rms": 0.045339036384960216,
+      "dc": 3.132249336137964e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.00017294207980326262,
+      "energy_after_150ms": 1.7156687487356086e-07,
+      "sha256": "1693b035f7df77efd7acdfbe9424eae37ef4568e0c56bd4399d317c26067b2f2",
+      "layers": [
+        {
+          "source": "metal2",
+          "gain": 0.84
+        },
+        {
+          "source": "chop",
+          "gain": 0.16,
+          "speed": 1.1
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-parry-3.wav",
+      "seconds": 0.21,
+      "peak": 0.379974365234375,
+      "rms": 0.04491925928500599,
+      "dc": 1.0544892560198683e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 2.7214584871284908e-05,
+      "energy_after_150ms": 3.213676095430617e-07,
+      "sha256": "21d95f56ad8711a713a1cdf75cc6f67fa719bf998b2e09e14b0dfec60ff33fca",
+      "layers": [
+        {
+          "source": "metal3",
+          "gain": 0.84
+        },
+        {
+          "source": "chop",
+          "gain": 0.16,
+          "speed": 1.1
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-select.wav",
+      "seconds": 0.22,
+      "peak": 0.22998046875,
+      "rms": 0.035320639865214956,
+      "dc": 1.3840171485260771e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.0007198564074017175,
+      "energy_after_150ms": 3.5507917937990414e-05,
+      "sha256": "749ae705b156b9b052daa3afae6f04939c4a99e68c1a1de0cadcc887f27e8de9",
+      "layers": [
+        {
+          "source": "select",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-footstep-1.wav",
+      "seconds": 0.1,
+      "peak": 0.225341796875,
+      "rms": 0.029999008098817073,
+      "dc": -8.996111465419502e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.0001769878538892556,
+      "energy_after_150ms": 0.0,
+      "sha256": "532b8b2e995a1c24ec921bd470e2d77aa3f8af407a11d5fd98ade4127e8abeaa",
+      "layers": [
+        {
+          "source": "footstep1",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-footstep-2.wav",
+      "seconds": 0.11,
+      "peak": 0.23150634765625,
+      "rms": 0.02999924825013453,
+      "dc": -2.2018454635642136e-07,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.00045876048302321437,
+      "energy_after_150ms": 0.0,
+      "sha256": "272bdc1db8e417f7d2201064e1d6f43d6ea0a7b8c6f9508f8294cdf16b58f397",
+      "layers": [
+        {
+          "source": "footstep2",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-jump.wav",
+      "seconds": 0.12,
+      "peak": 0.239990234375,
+      "rms": 0.02712077961074409,
+      "dc": 5.190064306972789e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.0003071299143384959,
+      "energy_after_150ms": 0.0,
+      "sha256": "6d013f9aa31921c35689601638784468e6d429d88cd6d0ad798c130056147f90",
+      "layers": [
+        {
+          "source": "cloth1",
+          "gain": 1.0
+        }
+      ]
+    },
+    {
+      "file": "presentation-v2-land.wav",
+      "seconds": 0.14,
+      "peak": 0.279998779296875,
+      "rms": 0.034520312650206345,
+      "dc": 8.402961258908325e-08,
+      "endpoints": [
+        0.0,
+        0.0
+      ],
+      "energy_above_6khz": 0.00015720908493867535,
+      "energy_after_150ms": 0.0,
+      "sha256": "ada197a5235dc979627ab60df7d3d517d6da2b37225b189486bd9818ad7e25bd",
+      "layers": [
+        {
+          "source": "footstep2",
+          "gain": 0.85,
+          "speed": 0.92
+        },
+        {
+          "source": "cloth2",
+          "gain": 0.25,
+          "delay": 0.008
+        }
+      ]
+    }
+  ],
+  "recommended_SOUND_FILES": {
+    "swing1": "presentation-v2-swing-1.wav",
+    "swing2": "presentation-v2-swing-2.wav",
+    "swing3": "presentation-v2-swing-3.wav",
+    "impact1": "presentation-v2-impact-1.wav",
+    "impact2": "presentation-v2-impact-2.wav",
+    "impact3": "presentation-v2-impact-3.wav",
+    "parry1": "presentation-v2-parry-1.wav",
+    "parry2": "presentation-v2-parry-2.wav",
+    "parry3": "presentation-v2-parry-3.wav",
+    "echo": "presentation-v2-impact-1.wav",
+    "counter": "presentation-v2-impact-3.wav",
+    "hurt": "impact-2-soft.wav",
+    "reward": "presentation-v2-select.wav",
+    "footstep1": "presentation-v2-footstep-1.wav",
+    "footstep2": "presentation-v2-footstep-2.wav",
+    "jump": "presentation-v2-jump.wav",
+    "land": "presentation-v2-land.wav"
+  }
+}

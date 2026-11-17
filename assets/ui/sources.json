@@ -1,0 +1,86 @@
++{
+  "retrieved_on": "2026-11-09",
+  "author": "Lorc",
+  "license": "CC-BY-3.0",
+  "repository": "game-icons/icons",
+  "files": [
+    {
+      "name": "bloody-sword.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/bloody-sword.svg",
+      "blob_sha": "23183e0aa26607e241ebe24c49bb877c21569d8e",
+      "local": "source-icons/bloody-sword.svg"
+    },
+    {
+      "name": "moon.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/moon.svg",
+      "blob_sha": "0a0af1ad23a6f860e26623a0a6dee10654c0c774",
+      "local": "source-icons/moon.svg"
+    },
+    {
+      "name": "crossed-swords.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/crossed-swords.svg",
+      "blob_sha": "38f2a8c74b206fc0285f470c1731e62aa0e310f2",
+      "local": "source-icons/crossed-swords.svg"
+    },
+    {
+      "name": "blade-bite.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/blade-bite.svg",
+      "blob_sha": "c0697aea841e666e0984655baba3f93b9dd2ca0f",
+      "local": "source-icons/blade-bite.svg"
+    },
+    {
+      "name": "crossed-slashes.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/crossed-slashes.svg",
+      "blob_sha": "be8f24551690a08fc4c8b0bb424954e50492751e",
+      "local": "source-icons/crossed-slashes.svg"
+    },
+    {
+      "name": "bleeding-wound.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/bleeding-wound.svg",
+      "blob_sha": "7c4b9ed92933d55a374079d91a2f0ad1f6d073e1",
+      "local": "source-icons/bleeding-wound.svg"
+    },
+    {
+      "name": "eye-shield.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/eye-shield.svg",
+      "blob_sha": "268409bf64ebe0399fab9e1cf5e503b4b57a672c",
+      "local": "source-icons/eye-shield.svg"
+    },
+    {
+      "name": "ankh.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/ankh.svg",
+      "blob_sha": "908854f7c7de5d1f6316363bba2e1d4c7d544064",
+      "local": "source-icons/ankh.svg"
+    },
+    {
+      "name": "potion-ball.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/potion-ball.svg",
+      "blob_sha": "44d5b89cb467f6d47c6fd84cd6bf907e1292ea27",
+      "local": "source-icons/potion-ball.svg"
+    },
+    {
+      "name": "ninja-mask.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/ninja-mask.svg",
+      "blob_sha": "e75f1fe28b1be96f55deb0ad49ace5d8c634a54e",
+      "local": "source-icons/ninja-mask.svg"
+    },
+    {
+      "name": "mountaintop.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/mountaintop.svg",
+      "blob_sha": "b533af1b00a3c18a24c885f312b633df5fa5ef6b",
+      "local": "source-icons/mountaintop.svg"
+    },
+    {
+      "name": "pointy-sword.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/pointy-sword.svg",
+      "blob_sha": "a38cc5196e7906b3ec252141ccd6fd6db2644272",
+      "local": "source-icons/pointy-sword.svg"
+    },
+    {
+      "name": "run.svg",
+      "source_url": "https://github.com/game-icons/icons/blob/master/lorc/run.svg",
+      "blob_sha": "d906aa3b7d6f756f4115673ee4534a8885ac14f1",
+      "local": "source-icons/run.svg"
+    }
+  ]
+}

@@ -1,0 +1,312 @@
+{
+  "version": 2,
+  "status": "motion-study",
+  "sourceOrigin": "top-left",
+  "angleConvention": "degrees-clockwise-screen-y-down",
+  "renderOrder": [
+    "body",
+    "sword",
+    "handOverlay"
+  ],
+  "bodyFile": "attack-body.png",
+  "bodySize": [
+    1774,
+    887
+  ],
+  "referenceBodyHeight": 379,
+  "frames": [
+    {
+      "rect": [
+        0,
+        0,
+        444,
+        444
+      ],
+      "anchor": [
+        198.21,
+        417
+      ],
+      "grip": [
+        191.35,
+        258.46
+      ],
+      "swordAngleDeg": 21,
+      "durationMs": 80,
+      "phase": "기본 자세",
+      "opaqueBounds": [
+        110,
+        38,
+        285,
+        417
+      ],
+      "handOverlay": [
+        182,
+        249,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        444,
+        0,
+        443,
+        444
+      ],
+      "anchor": [
+        197.77,
+        417
+      ],
+      "grip": [
+        171.98,
+        224.84
+      ],
+      "swordAngleDeg": -63,
+      "durationMs": 70,
+      "phase": "체중 싣기",
+      "opaqueBounds": [
+        92,
+        46,
+        299,
+        417
+      ],
+      "handOverlay": [
+        163,
+        216,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        887,
+        0,
+        443,
+        444
+      ],
+      "anchor": [
+        197.77,
+        417
+      ],
+      "grip": [
+        187.65,
+        107.93
+      ],
+      "swordAngleDeg": -152,
+      "durationMs": 85,
+      "phase": "준비 완료",
+      "opaqueBounds": [
+        109,
+        44,
+        339,
+        417
+      ],
+      "handOverlay": [
+        179,
+        99,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        1330,
+        0,
+        444,
+        444
+      ],
+      "anchor": [
+        198.21,
+        417
+      ],
+      "grip": [
+        297.41,
+        160.11
+      ],
+      "swordAngleDeg": -60,
+      "durationMs": 25,
+      "phase": "베기 시작",
+      "opaqueBounds": [
+        72,
+        70,
+        326,
+        417
+      ],
+      "handOverlay": [
+        288,
+        151,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        0,
+        444,
+        444,
+        443
+      ],
+      "anchor": [
+        198.21,
+        414
+      ],
+      "grip": [
+        298.32,
+        233.09
+      ],
+      "swordAngleDeg": 9,
+      "durationMs": 35,
+      "phase": "타격 구간",
+      "opaqueBounds": [
+        66,
+        77,
+        346,
+        414
+      ],
+      "handOverlay": [
+        289,
+        224,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        444,
+        444,
+        443,
+        443
+      ],
+      "anchor": [
+        197.77,
+        416
+      ],
+      "grip": [
+        323.28,
+        288.23
+      ],
+      "swordAngleDeg": 22,
+      "durationMs": 90,
+      "phase": "후속 동작",
+      "opaqueBounds": [
+        49,
+        102,
+        353,
+        416
+      ],
+      "handOverlay": [
+        314,
+        279,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        887,
+        444,
+        443,
+        443
+      ],
+      "anchor": [
+        197.77,
+        416
+      ],
+      "grip": [
+        242.07,
+        257.18
+      ],
+      "swordAngleDeg": 24,
+      "durationMs": 100,
+      "phase": "자세 회수",
+      "opaqueBounds": [
+        79,
+        66,
+        326,
+        416
+      ],
+      "handOverlay": [
+        233,
+        248,
+        18,
+        19
+      ]
+    },
+    {
+      "rect": [
+        1330,
+        444,
+        444,
+        443
+      ],
+      "anchor": [
+        198.21,
+        416
+      ],
+      "grip": [
+        191.44,
+        257.97
+      ],
+      "swordAngleDeg": 21,
+      "durationMs": 115,
+      "phase": "복귀",
+      "opaqueBounds": [
+        110,
+        40,
+        284,
+        416
+      ],
+      "handOverlay": [
+        182,
+        249,
+        18,
+        19
+      ]
+    }
+  ],
+  "weapon": {
+    "file": "sword.png",
+    "size": [
+      2172,
+      724
+    ],
+    "grip": [
+      193.0,
+      362.0
+    ],
+    "guardX": 285,
+    "bladeLength": 1786,
+    "bladeToBodyRatio": 0.73,
+    "opaqueBounds": [
+      101,
+      302,
+      2071,
+      422
+    ]
+  },
+  "old": {
+    "file": "previous-attack.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "bodyHeight": 404,
+    "anchor": [
+      165,
+      496
+    ],
+    "durationsMs": [
+      100,
+      90,
+      45,
+      55,
+      90,
+      120
+    ]
+  },
+  "reference": {
+    "title": "Martial Hero / LuizMelo",
+    "url": "https://luizmelo.itch.io/martial-hero",
+    "usage": "중앙 캐릭터의 준비·체중 이동·몸통 회전 참고. 외형은 자체 캐릭터 유지."
+  }
+}

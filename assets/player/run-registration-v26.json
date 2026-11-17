@@ -1,0 +1,317 @@
+{
+  "run": {
+    "file": "run-v26.png",
+    "size": [
+      1774,
+      887
+    ],
+    "referenceBodyHeight": 390,
+    "loop": true,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "anchor": [
+          215,
+          415
+        ],
+        "grip": [
+          146,
+          220
+        ],
+        "swordAngleDeg": 9,
+        "durationMs": 78,
+        "opaqueBounds": [
+          19,
+          33,
+          418,
+          415
+        ],
+        "sourceFrame": 0,
+        "handOverlay": [
+          133,
+          208,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 358,
+          "knee": 294,
+          "hip": 215
+        }
+      },
+      {
+        "rect": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          228,
+          417
+        ],
+        "grip": [
+          145,
+          248
+        ],
+        "swordAngleDeg": 8,
+        "durationMs": 95,
+        "opaqueBounds": [
+          20,
+          52,
+          396,
+          417
+        ],
+        "sourceFrame": 1,
+        "handOverlay": [
+          132,
+          236,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 219,
+          "knee": 223,
+          "hip": 228
+        }
+      },
+      {
+        "rect": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          221,
+          420
+        ],
+        "grip": [
+          329,
+          180
+        ],
+        "swordAngleDeg": -26,
+        "durationMs": 107,
+        "opaqueBounds": [
+          23,
+          29,
+          412,
+          420
+        ],
+        "sourceFrame": 2,
+        "handOverlay": [
+          316,
+          168,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 64,
+          "knee": 135,
+          "hip": 221
+        }
+      },
+      {
+        "rect": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          212,
+          430
+        ],
+        "grip": [
+          333,
+          204
+        ],
+        "swordAngleDeg": -40,
+        "durationMs": 76,
+        "opaqueBounds": [
+          17,
+          56,
+          432,
+          430
+        ],
+        "sourceFrame": 4,
+        "handOverlay": [
+          320,
+          192,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 376,
+          "knee": 302,
+          "hip": 212
+        }
+      },
+      {
+        "rect": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          222,
+          428
+        ],
+        "grip": [
+          313,
+          203
+        ],
+        "swordAngleDeg": -43,
+        "durationMs": 95,
+        "opaqueBounds": [
+          21,
+          62,
+          403,
+          428
+        ],
+        "sourceFrame": 5,
+        "handOverlay": [
+          300,
+          191,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 177,
+          "knee": 197,
+          "hip": 222
+        }
+      },
+      {
+        "rect": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          223,
+          430
+        ],
+        "grip": [
+          134,
+          232
+        ],
+        "swordAngleDeg": 13,
+        "durationMs": 58,
+        "opaqueBounds": [
+          12,
+          54,
+          400,
+          430
+        ],
+        "sourceFrame": 6,
+        "handOverlay": [
+          121,
+          220,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 39,
+          "knee": 122,
+          "hip": 223
+        }
+      },
+      {
+        "rect": [
+          1330,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          223,
+          426
+        ],
+        "grip": [
+          144,
+          249
+        ],
+        "swordAngleDeg": 6,
+        "durationMs": 51,
+        "opaqueBounds": [
+          24,
+          51,
+          431,
+          426
+        ],
+        "sourceFrame": 7,
+        "handOverlay": [
+          131,
+          237,
+          26,
+          24
+        ],
+        "supportLeg": {
+          "sole": 46,
+          "knee": 126,
+          "hip": 223
+        }
+      }
+    ],
+    "footContacts": [
+      {
+        "frame": 0,
+        "foot": "near"
+      },
+      {
+        "frame": 3,
+        "foot": "far"
+      }
+    ],
+    "cycleNotes": "Hand and hip anchors are registered per full-body sprint drawing."
+  },
+  "brake": {
+    "file": "brake-v26.png",
+    "size": [
+      448,
+      448
+    ],
+    "referenceBodyHeight": 411,
+    "loop": false,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          448,
+          448
+        ],
+        "anchor": [
+          224,
+          423
+        ],
+        "grip": [
+          303,
+          185
+        ],
+        "opaqueBounds": [
+          12,
+          23,
+          402,
+          423
+        ],
+        "durationMs": 67,
+        "swordAngleDeg": -42,
+        "handOverlay": [
+          269,
+          153,
+          67,
+          66
+        ]
+      }
+    ]
+  }
+}

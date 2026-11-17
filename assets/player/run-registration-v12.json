@@ -1,0 +1,210 @@
+{
+  "run": {
+    "file": "run-v12.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "referenceBodyHeight": 404,
+    "loop": true,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          474
+        ],
+        "grip": [
+          235,
+          280
+        ],
+        "swordAngleDeg": 18,
+        "durationMs": 100,
+        "opaqueBounds": [
+          47,
+          98,
+          460,
+          474
+        ],
+        "sourceFrame": 0,
+        "handOverlay": [
+          222,
+          265,
+          26,
+          30
+        ]
+      },
+      {
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          475
+        ],
+        "grip": [
+          229,
+          291
+        ],
+        "swordAngleDeg": 23,
+        "durationMs": 100,
+        "opaqueBounds": [
+          48,
+          126,
+          425,
+          475
+        ],
+        "sourceFrame": 1,
+        "handOverlay": [
+          216,
+          276,
+          26,
+          30
+        ]
+      },
+      {
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          484
+        ],
+        "grip": [
+          237,
+          272
+        ],
+        "swordAngleDeg": 12,
+        "durationMs": 80,
+        "opaqueBounds": [
+          45,
+          90,
+          419,
+          475
+        ],
+        "sourceFrame": 2,
+        "handOverlay": [
+          224,
+          257,
+          26,
+          30
+        ]
+      },
+      {
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          474
+        ],
+        "grip": [
+          244,
+          285
+        ],
+        "swordAngleDeg": 16,
+        "durationMs": 100,
+        "opaqueBounds": [
+          42,
+          100,
+          470,
+          474
+        ],
+        "sourceFrame": 3,
+        "handOverlay": [
+          231,
+          270,
+          26,
+          30
+        ]
+      },
+      {
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          474
+        ],
+        "grip": [
+          237,
+          282
+        ],
+        "swordAngleDeg": 21,
+        "durationMs": 100,
+        "opaqueBounds": [
+          52,
+          117,
+          432,
+          474
+        ],
+        "sourceFrame": 4,
+        "handOverlay": [
+          224,
+          267,
+          26,
+          30
+        ]
+      },
+      {
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          260,
+          483
+        ],
+        "grip": [
+          257,
+          264
+        ],
+        "swordAngleDeg": 11,
+        "durationMs": 80,
+        "opaqueBounds": [
+          50,
+          87,
+          430,
+          474
+        ],
+        "sourceFrame": 5,
+        "handOverlay": [
+          244,
+          249,
+          26,
+          30
+        ]
+      }
+    ],
+    "footContacts": [
+      {
+        "frame": 0,
+        "foot": "near"
+      },
+      {
+        "frame": 3,
+        "foot": "far"
+      }
+    ],
+    "cycleNotes": "Remade near contact/support/push-off then far contact/support/push-off. Dark far calf remains consistent."
+  }
+}

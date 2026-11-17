@@ -1,0 +1,409 @@
+{
+  "run": {
+    "file": "run-stride-v7.png",
+    "size": [
+      1774,
+      887
+    ],
+    "referenceBodyHeight": 370,
+    "loop": true,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          444,
+          444
+        ],
+        "anchor": [
+          236,
+          408
+        ],
+        "grip": [
+          191.99,
+          225.77
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 100,
+        "opaqueBounds": [
+          57,
+          75,
+          374,
+          408
+        ],
+        "sourceFrame": 0,
+        "handOverlay": [
+          180,
+          212,
+          24,
+          28
+        ]
+      },
+      {
+        "rect": [
+          444,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          236,
+          408
+        ],
+        "grip": [
+          193.14,
+          224.65
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 100,
+        "opaqueBounds": [
+          64,
+          75,
+          345,
+          408
+        ],
+        "sourceFrame": 1,
+        "handOverlay": [
+          181,
+          211,
+          24,
+          28
+        ]
+      },
+      {
+        "rect": [
+          887,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          236,
+          414
+        ],
+        "grip": [
+          194.29,
+          224.04
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 80,
+        "opaqueBounds": [
+          56,
+          73,
+          346,
+          405
+        ],
+        "sourceFrame": 6,
+        "handOverlay": [
+          182,
+          210,
+          24,
+          28
+        ]
+      },
+      {
+        "rect": [
+          0,
+          444,
+          444,
+          443
+        ],
+        "anchor": [
+          236,
+          400
+        ],
+        "grip": [
+          191.67,
+          223.55
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 100,
+        "opaqueBounds": [
+          49,
+          73,
+          374,
+          400
+        ],
+        "sourceFrame": 4,
+        "handOverlay": [
+          180,
+          210,
+          24,
+          28
+        ]
+      },
+      {
+        "rect": [
+          444,
+          444,
+          443,
+          443
+        ],
+        "anchor": [
+          236,
+          405
+        ],
+        "grip": [
+          192.79,
+          223.44
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 100,
+        "opaqueBounds": [
+          62,
+          73,
+          346,
+          405
+        ],
+        "sourceFrame": 5,
+        "handOverlay": [
+          181,
+          209,
+          24,
+          28
+        ]
+      },
+      {
+        "rect": [
+          887,
+          0,
+          443,
+          444
+        ],
+        "anchor": [
+          236,
+          417
+        ],
+        "grip": [
+          192.46,
+          225.19
+        ],
+        "swordAngleDeg": 14,
+        "durationMs": 80,
+        "opaqueBounds": [
+          64,
+          75,
+          345,
+          408
+        ],
+        "sourceFrame": 2,
+        "handOverlay": [
+          180,
+          211,
+          24,
+          28
+        ]
+      }
+    ],
+    "cycleNotes": "Six selected poses: near contact/down, near toe-off, far contact/down, far toe-off. Source flight repeats omitted.",
+    "footContacts": [
+      {
+        "frame": 0,
+        "foot": "near"
+      },
+      {
+        "frame": 3,
+        "foot": "far"
+      }
+    ]
+  },
+  "parry": {
+    "file": "parry-guard-beat-v3.png",
+    "size": [
+      1536,
+      1024
+    ],
+    "referenceBodyHeight": 442,
+    "loop": false,
+    "frames": [
+      {
+        "rect": [
+          0,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          274.93,
+          270.52
+        ],
+        "swordAngleDeg": -55,
+        "durationMs": 35,
+        "opaqueBounds": [
+          156,
+          28,
+          357,
+          470
+        ],
+        "handOverlay": [
+          259,
+          253,
+          32,
+          36
+        ]
+      },
+      {
+        "rect": [
+          512,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          284.44,
+          211.79
+        ],
+        "swordAngleDeg": -55,
+        "durationMs": 35,
+        "opaqueBounds": [
+          130,
+          35,
+          382,
+          470
+        ],
+        "handOverlay": [
+          268,
+          194,
+          32,
+          36
+        ]
+      },
+      {
+        "rect": [
+          1024,
+          0,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          284.61,
+          211.65
+        ],
+        "swordAngleDeg": -55,
+        "durationMs": 50,
+        "opaqueBounds": [
+          130,
+          35,
+          382,
+          470
+        ],
+        "handOverlay": [
+          269,
+          194,
+          32,
+          36
+        ]
+      },
+      {
+        "rect": [
+          0,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          377.85,
+          175.78
+        ],
+        "swordAngleDeg": -38,
+        "durationMs": 70,
+        "opaqueBounds": [
+          119,
+          43,
+          416,
+          470
+        ],
+        "handOverlay": [
+          362,
+          158,
+          32,
+          36
+        ]
+      },
+      {
+        "rect": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          369.1,
+          264.01
+        ],
+        "swordAngleDeg": 30,
+        "durationMs": 65,
+        "opaqueBounds": [
+          109,
+          48,
+          395,
+          470
+        ],
+        "handOverlay": [
+          353,
+          246,
+          32,
+          36
+        ]
+      },
+      {
+        "rect": [
+          1024,
+          512,
+          512,
+          512
+        ],
+        "anchor": [
+          270,
+          470
+        ],
+        "grip": [
+          274.03,
+          270.65
+        ],
+        "swordAngleDeg": -55,
+        "durationMs": 85,
+        "opaqueBounds": [
+          156,
+          28,
+          357,
+          470
+        ],
+        "handOverlay": [
+          258,
+          253,
+          32,
+          36
+        ]
+      }
+    ],
+    "poseRoles": [
+      "low-ready",
+      "guard-raise",
+      "guard-hold",
+      "beat-contact",
+      "beat-outward",
+      "low-ready"
+    ]
+  }
+}
