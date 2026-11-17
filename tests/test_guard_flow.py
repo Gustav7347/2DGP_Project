@@ -31,6 +31,25 @@ class GuardFlowTests(unittest.TestCase):
         self.assertEqual([self.a.state,self.b.state],['stunned','stunned'])
         self.assertGreater(self.a.recoil_left,0)
 
+    def test_sweep_pushes_both_sides_once_and_leaves_far_enemy_in_place(self):
+        self.p.x=500
+        self.a.x=575
+        self.b.x=425
+        far=Enemy(93,'sword',700,state='recovery',timer=99)
+        boss=Enemy(94,'boss',575,state='recovery',timer=99)
+        self.g.enemies.extend([far,boss])
+        self.guard()
+        self.assertTrue(all(e.recoil_left==0 for e in self.g.enemies))
+        self.g._enemy_strike(self.a)
+        initial=[e.x for e in self.g.enemies]
+        for e in self.g.enemies:self.g._advance_recoil(e,C.PARRY_PUSH_TIME)
+        self.assertGreater(self.a.x,initial[0])
+        self.assertLess(self.b.x,initial[1])
+        self.assertEqual(far.x,initial[2])
+        self.assertAlmostEqual(boss.x-initial[3],(self.a.x-initial[0])*C.BOSS_PUSH_SCALE)
+        self.g._enemy_strike(self.a)
+        self.assertEqual(self.b.recoil_left,0)
+
     def test_boss_multihit_counts_once_per_guard(self):
         self.p.style='moon'; self.a.kind='boss'; self.guard()
         self.g._enemy_strike(self.a); self.g._enemy_strike(self.a)
@@ -59,7 +78,7 @@ class GuardFlowTests(unittest.TestCase):
         self.assertEqual(self.a.hp,before)
         self.assertEqual(self.p.hp,38)
         self.assertTrue(self.p.counter_ready)
-        self.assertEqual(self.p.parry_feedback,0)
+        self.assertGreater(self.p.parry_feedback,0)
         self.advance(.6)
         self.g.tick(1/120,Controls(attack=True)); self.advance(.4)
         self.assertAlmostEqual(before-self.a.hp,C.BASE_DAMAGE*C.COUNTER_DAMAGE)

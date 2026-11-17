@@ -3,7 +3,7 @@ from pathlib import Path
 import ctypes, json, math, os, struct, zlib
 from pico2d import pico2d as p2
 from . import config as C
-from .motion import run_weight,grip_travel,sample_frame,blade_angle,blade_ribbon,attack_pose_time,counter_pose_time,parry_pose_time,parry_contact,deflect_frame,held_blade_angle
+from .motion import blade_edge,run_weight,grip_travel,sample_frame,blade_angle,blade_ribbon,attack_pose_time,counter_pose_time,parry_pose_time,parry_contact,deflect_frame,held_blade_angle
 from .interface import Interface,choice_detail,combat_status,last_hit_text
 from .presentation import GameUI
 
@@ -27,8 +27,10 @@ class Renderer:
         self.fonts={size:p2.load_font(str(font_root/'Galmuri11.ttf'),actual) for size,actual in sizes.items()}
         self.display_fonts={size:p2.load_font(str(font_root/'Galmuri11-Bold.ttf'),actual if actual!=20 else 24) for size,actual in sizes.items()}
         self.hero_data=json.loads((ASSETS/'player'/'animations.json').read_text('utf-8'))
-        self.hero={k:p2.load_image(str(ASSETS/'player'/v['file'])) for k,v in self.hero_data['animations'].items()}
-        self.sword=p2.load_image(str(ASSETS/'player'/'sword.png'))
+        self.enemy_deflected_sword=p2.load_image(str(ASSETS/'player'/'sword.png'))
+        hero_images={v['file'] for v in self.hero_data['animations'].values()}
+        sheets={file:p2.load_image(str(ASSETS/'player'/file)) for file in hero_images}
+        self.hero={name:sheets[a['file']] for name,a in self.hero_data['animations'].items()}
         self.enemy_data=json.loads((ASSETS/'enemies'/'animations.json').read_text('utf-8'))
         enemy_images={name:p2.load_image(str(ASSETS/'enemies'/name)) for name in {v['file'] for v in self.enemy_data.values()}}
         self.enemies={k:enemy_images[v['file']] for k,v in self.enemy_data.items()}
@@ -200,54 +202,10 @@ class Renderer:
         image=self.hero[name]
         scale=height/anim['referenceBodyHeight']
         left,top,w,h=f['rect']; ax,ay=f['anchor']
-        moving_blade=name.startswith('attack') and frame is None
-        angle=blade_angle(anim,seconds) if moving_blade else held_blade_angle(anim,seconds)
-        if name=='run' and frame is None:
-            _,phase=sample_frame(anim,seconds)
-            next_angle=anim['frames'][(i+1)%len(anim['frames'])]['swordAngleDeg']
-            angle+=(next_angle-angle)*phase*phase*(3-2*phase)
-        lx=ly=0.
-        if player is not None:
-            allow=(name in ('run','idle','attack','attack2','attack3','brake','parry') and
-                   player.counter_left<=0 and not (name=='parry' and player.parry_feedback>0))
-            grip=((f['grip'][0]-ax)*scale,(ay-f['grip'][1])*scale)
-            lx,ly,angle=self.link_hand(player,name,facing,grip,angle,dt,allow)
-        if moving_blade and self.geometry_supported:
-            ribbon=blade_ribbon(anim,self.hero_data['weapon'],seconds,x,y,facing,height)
-            points=[(px,py,(*((207,235,247) if n%2 else (103,147,171)),round(a*alpha))) for n,(px,py,a) in enumerate(ribbon)]
-            indices=[j for n in range(0,len(points)-2,2) for j in (n,n+1,n+2,n+1,n+3,n+2)]
-            if indices:self.mesh(points,indices)
-        if moving_blade and not self.geometry_supported and i in (3,4):
-            for delay,opacity in ((.028,.08),(.014,.17)):
-                previous=max(0.,seconds-delay)
-                old=anim['frames'][self.frame_at(anim,previous)]
-                self.draw_weapon(anim,old,blade_angle(anim,previous),x,y,facing,height,alpha*opacity)
         image.opacify(alpha)
-        if moving_blade:
-            _,phase=sample_frame(anim,seconds)
-            dx,dy=grip_travel(anim,i,phase,scale)
-            dx+=lx;dy+=ly
-            self.draw_weighted_pose(image,f,x,y,facing,scale,dx,dy,0.,f['grip'][1]+f['handOverlay'][3])
-            x+=facing*dx
-            y+=dy
-        elif name=='run' and frame is None and 'supportLeg' in f:
-            dx,dy=self.draw_planted_run(image,anim,i,seconds,x,y,facing,height,alpha,lx,ly)
-            x+=facing*dx
-            y+=dy
-        elif lx or ly:
-            self.draw_weighted_pose(image,f,x,y,facing,scale,lx,ly,0.,f['grip'][1]+f['handOverlay'][3])
-            x+=facing*lx
-            y+=ly
-        else:
-            image.clip_composite_draw(left,image.h-top-h,w,h,0,'h' if facing<0 else '',
-                x+facing*(w/2-ax)*scale,y+(ay-h/2)*scale,w*scale,h*scale)
-        if weapon:self.draw_weapon(anim,f,angle,x,y,facing,height,alpha)
-        # Repaint only the existing hand pixels over the separate weapon.
-        hx,hy,hw,hh=f['handOverlay']
-        image.clip_composite_draw(left+hx,image.h-(top+hy+hh),hw,hh,0,'h' if facing<0 else '',
-            x+facing*(hx+hw/2-ax)*scale,y+(ay-hy-hh/2)*scale,hw*scale,hh*scale)
+        image.clip_composite_draw(left,image.h-top-h,w,h,0,'h' if facing<0 else '',
+            x+facing*(w/2-ax)*scale,y+(ay-h/2)*scale,w*scale,h*scale)
         image.opacify(1.)
-        self.sword.opacify(1.)
 
     def draw_planted_run(self,image,anim,index,seconds,x,y,facing,height,alpha,lx,ly):
         f=anim['frames'][index]
@@ -369,17 +327,6 @@ class Renderer:
         indices=[j for n in range(24) for j in (0,n+1,(n+1)%24+1)]
         self.mesh(points,indices)
 
-    def draw_weapon(self, anim, frame, angle, x, y, facing, height, alpha):
-        scale=height/anim['referenceBodyHeight'];ax,ay=frame['anchor'];wx,wy=frame['grip']
-        gx=x+facing*(wx-ax)*scale;gy=y+(ay-wy)*scale
-        weapon=self.hero_data['weapon'];a=math.radians(angle);rad=-a if facing>0 else a
-        ws=height*weapon['bladeToBodyRatio']/weapon['bladeLength']
-        dx=(self.sword.w/2-weapon['grip'][0])*ws*facing;dy=(weapon['grip'][1]-self.sword.h/2)*ws
-        self.sword.opacify(alpha)
-        self.sword.composite_draw(rad,'h' if facing<0 else '',gx+dx*math.cos(rad)-dy*math.sin(rad),
-                                 gy+dx*math.sin(rad)+dy*math.cos(rad),self.sword.w*ws,self.sword.h*ws)
-        self.sword.opacify(1.)
-
     @staticmethod
     def enemy_pose(enemy):
         if (enemy.kind=='sword' and enemy.alive and enemy.deflect_context
@@ -472,7 +419,7 @@ class Renderer:
         ty=ty*(1-settle)+(gy-45)*settle
         angle=math.atan2(ty-gy,tx-gx)
         if enemy.kind=='sword':
-            weapon=self.hero_data['weapon'];image=self.sword
+            weapon=self.hero_data['weapon'];image=self.enemy_deflected_sword
             rect=[0,0,image.w,image.h];ws=112/weapon['bladeLength']
         else:
             weapon=self.enemy_weapons[enemy.kind];image=self.enemy_weapon_image
@@ -486,6 +433,26 @@ class Renderer:
         image=self.enemies[enemy.kind+'-parried'];left,top,_,_=frame['rect'];ox,oy,ow,oh=frame['handOverlay']
         image.clip_composite_draw(left+ox,image.h-(top+oy+oh),ow,oh,0,'h' if enemy.facing<0 else '',
             enemy.x-camera+enemy.facing*(ox+ow/2-ax)*scale,enemy.y+(ay-oy-oh/2)*scale,ow*scale,oh*scale)
+
+    def draw_quickdraw_arc(self, x, y, face, elapsed):
+        if not .10<=elapsed<.21:return
+        age=(elapsed-.10)/.11
+        extent=min(1.,age*5+.12)
+        fade=(1-age)**.8
+        points=[];indices=[]
+        for i in range(37):
+            t=i/36
+            angle=-2.95+t*extent*3.55
+            width=(1+9*math.sin(math.pi*t))*fade
+            px=x+face*(8+math.cos(angle)*151)
+            py=y+math.sin(angle)*24
+            for offset in (0,width):
+                points.append((px,py+offset,(194,229,244,round(230*fade*(.2+.8*t)))))
+            if i:
+                j=2*i;indices.extend((j-2,j-1,j,j-1,j+1,j))
+        if not self.mesh(points,indices):
+            for i in range(2,len(points),2):
+                p2.draw_line(*map(round,points[i-2][:2]),*map(round,points[i][:2]),176,205,222)
 
     def environment(self, game, camera):
         boss=game.stage_index==3
@@ -550,7 +517,7 @@ class Renderer:
             x=e['x']-camera; y=e['y']; t=1-e['life']/e['max_life']
             a=round((1-t)*235)
             if e['kind']=='slash':
-                if self.geometry_supported and not e.get('echo') and 'combo' in e:continue
+                # Baked sword poses use the authored slash FX at contact.
                 face=e.get('facing',1)
                 scale=e.get('reach',165)/61
                 tail=1-max(0.,t-.55)/.45
@@ -729,13 +696,10 @@ class Renderer:
         if p.counter_left>C.COUNTER_DISPLAY-.12:alpha=1.
         # The successful sweep passes on the far side of the opponent. Keeping
         # it on the foreground layer makes a non-damaging parry look like a stab.
-        rear_blade=(name=='parry' and p.parry_feedback>0 and
-                    self.frame_at(self.hero_data['animations'][name],seconds) in (3,4))
-        if rear_blade:
-            anim=self.hero_data['animations'][name];f=anim['frames'][self.frame_at(anim,seconds)]
-            self.draw_weapon(anim,f,held_blade_angle(anim,seconds),p.x-camera,p.y,face,148,alpha)
         for enemy in sorted(game.enemies,key=lambda e:e.alive):self.draw_enemy(enemy,camera)
-        self.draw_hero(name,seconds,p.x-camera,p.y,face,alpha=alpha,frame=frame,weapon=not rear_blade,player=p,dt=dt)
+        self.draw_hero(name,seconds,p.x-camera,p.y,face,alpha=alpha,frame=frame)
+        if name=='parry' and p.parry_feedback>0:
+            self.draw_quickdraw_arc(p.x-camera,p.y+77,face,.22-p.parry_feedback)
         # The readied thrust runs in front of the coat at close range.
         for enemy in game.enemies:
             if self.enemy_pose(enemy)==('boss-extra',0):

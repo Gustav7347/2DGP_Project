@@ -13,8 +13,12 @@ def parry_pose_time(animation,seconds,feedback=0.):
     if feedback>0:
         elapsed=max(0.,.22-feedback)
         if elapsed<.025:return guard
-        if elapsed<.105:return contact+(followthrough-contact-2e-8)*(elapsed-.025)/.080
-        return followthrough if elapsed<.15 else neutral
+        if elapsed<.085:return contact
+        extra=sum(f['durationMs'] for f in animation['frames'][:6])/1000+1e-8
+        if elapsed<.103:return extra
+        if elapsed<.155:return followthrough
+        if elapsed<.20:return extra+animation['frames'][6]['durationMs']/1000
+        return neutral
     if seconds<=PARRY_WINDOW:
         return ready if seconds<.035 else guard
     return neutral
@@ -71,16 +75,15 @@ def blade_angle(animation, seconds):
     index,phase=sample_frame(animation,seconds)
     start=animation['frames'][index]['swordAngleDeg']
     end=animation['frames'][min(index+1,len(animation['frames'])-1)]['swordAngleDeg']
-    if index==2: phase=max(0.,(phase-.55)/.45)
-    elif index in (3,4): phase=1-(1-phase)**3
-    else: phase=phase*phase*(3-2*phase)
+    if index not in (2,3,4):
+        phase=phase*phase*(3-2*phase)
     return start+(end-start)*phase
 
 
 def held_blade_angle(animation, seconds):
     index, phase = sample_frame(animation, seconds)
     frame = animation['frames'][index]
-    if animation.get('file', '').startswith('parry') and index == 3:
+    if animation.get('poseRoles') is not None and index == 3:
         ease = phase * phase * (3 - 2 * phase)
         return -90 * (1 - ease)
     return frame['swordAngleDeg']
@@ -104,6 +107,9 @@ def blade_edge(animation,weapon,seconds,x,y,facing,height,continuous=True):
     scale=height/animation['referenceBodyHeight']
     gx=x+facing*(frame['grip'][0]-frame['anchor'][0])*scale
     gy=y+(frame['anchor'][1]-frame['grip'][1])*scale
+    if 'tip' in frame:
+        tx,ty=frame['tip']
+        return (gx,gy),(x+facing*(tx-frame['anchor'][0])*scale,y+(frame['anchor'][1]-ty)*scale)
     if continuous:
         index,phase=sample_frame(animation,seconds)
         dx,dy=grip_travel(animation,index,phase,scale)
@@ -116,13 +122,18 @@ def blade_edge(animation,weapon,seconds,x,y,facing,height,continuous=True):
 
 def parry_contact(animation,weapon,x,y,facing,hint,height=148,*,seconds=0.,feedback=.22):
     pose=parry_pose_time(animation,seconds,feedback)
-    grip,tip=blade_edge(animation,weapon,pose,x,y,facing,height,continuous=False)
+    frame=animation['frames'][sample_frame(animation,pose)[0]]
+    scale=height/animation['referenceBodyHeight']
+    def world(point):
+        return x+facing*(point[0]-frame['anchor'][0])*scale,y+(frame['anchor'][1]-point[1])*scale
+    grip,tip=world(frame['grip']),world(frame['tip'])
     dx,dy=tip[0]-grip[0],tip[1]-grip[1]
     along=max(0.,min(1.,((hint[0]-grip[0])*dx+(hint[1]-grip[1])*dy)/(dx*dx+dy*dy)))
     return grip[0]+dx*along,grip[1]+dy*along
 
 
 def blade_ribbon(animation,weapon,seconds,x,y,facing,height):
+    if animation.get("integratedWeapon"):return []
     index,phase=sample_frame(animation,seconds)
     if index<2 or (index==2 and phase<.55) or index>5 or (index==5 and phase>=.35):return []
     fade=1-phase/.35 if index==5 else 1.

@@ -62,12 +62,10 @@ class CombatPresentationTests(unittest.TestCase):
         anim=data['animations']['attack'];weapon=data['weapon']
         ribbon=motion.blade_ribbon
         self.assertEqual(ribbon(anim,weapon,.1,500,112,1,148),[])
-        self.assertGreater(len(ribbon(anim,weapon,.28,500,112,1,148)),4)
-        self.assertEqual(ribbon(anim,weapon,.6,500,112,1,148),[])
-        right=ribbon(anim,weapon,.28,500,112,1,148)
-        left=ribbon(anim,weapon,.28,500,112,-1,148)
-        for (rx,ry,ra),(lx,ly,la) in zip(right,left):
-            self.assertAlmostEqual(rx+lx,1000);self.assertAlmostEqual(ry,ly);self.assertEqual(ra,la)
+        self.assertTrue(anim['integratedWeapon'])
+        for face in (1,-1):
+            self.assertEqual(ribbon(anim,weapon,.28,500,112,face,148),[])
+
 
 
 if __name__=='__main__':unittest.main()

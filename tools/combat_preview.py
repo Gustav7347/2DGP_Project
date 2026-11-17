@@ -7,7 +7,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--project',type=Path,default=Path(__file__).resolve().parents[1])
     parser.add_argument('--out',type=Path,required=True)
-    parser.add_argument('--scenario',choices=('contact','movement','camera','ledge','timing','approach','gait','links','style'),default='contact')
+    parser.add_argument('--scenario',choices=('contact','movement','camera','ledge','timing','approach','gait','links'),default='contact')
     parser.add_argument('--augments',nargs='*',default=[])
     parser.add_argument('--enemy',choices=('sword','spear','boss'),default='sword')
     parser.add_argument('--phase',type=int,choices=(1,2),default=1)
@@ -45,11 +45,6 @@ def main():
             c=Controls()
             if args.scenario=='gait':
                 c.move=1 if frame<84 else -1 if 152<=frame<212 else 0
-            elif args.scenario=='style':
-                c.move=1 if 36<=frame<85 or 110<=frame<158 else -1 if 210<=frame<254 else 0
-                if frame==145:c.attack=True
-                if frame==230:c.jump=True
-                if frame==300:c.parry=True
             elif args.scenario=='links':
                 c.move=1 if frame<155 else -1 if frame<200 else 1 if frame<276 else 0
                 if frame in (36,52,71,250):c.attack=True

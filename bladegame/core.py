@@ -113,6 +113,7 @@ class Enemy:
     strike_spent: bool = False
     windup_total: float = .65
     hurt_duration: float = .18
+    parry_push_delay: float = 0.
     recoil_left: float = 0.
     recoil_time: float = .14
     recoil_distance: float = 0.
@@ -600,6 +601,20 @@ class Game:
         self.event('player_hit',damage=damage,hp=round(p.hp,2),hit=self.last_hit.copy())
         return True
 
+    def _push_parry_area(self, attacker):
+        p=self.player
+        for target in self.living:
+            dx=target.x-p.x
+            distance=math.hypot(dx,target.y-p.y)
+            if target is not attacker and distance>C.PARRY_PUSH_RADIUS:
+                continue
+            strength=1.-.5*min(distance/C.PARRY_PUSH_RADIUS,1.)
+            push=C.PARRY_PUSH*strength*(C.BOSS_PUSH_SCALE if target.boss else 1.)
+            direction=(1 if dx>0 else -1) if dx else p.facing
+            target.recoil_time=target.recoil_left=C.PARRY_PUSH_TIME
+            target.recoil_distance=direction*push
+            target.parry_push_delay=.10
+
     def _enemy_strike(self, enemy):
         p=self.player
         if not enemy.attack_bounds.overlaps(p.bounds): return
@@ -612,7 +627,7 @@ class Game:
             p.parried_targets.add(enemy.uid)
             counter='counter' in p.augments
             if first:
-                p.parry_feedback=0. if counter else .22
+                p.parry_feedback=.22
                 p.parries+=1
             contact=dict(origin=(p.x,p.y),facing=p.facing,pose_time=p.action_time,pose_feedback=p.parry_feedback)
             # Ground contacts belong below the hat; airborne guards still project
@@ -633,14 +648,8 @@ class Game:
                 p.action,p.action_time,p.parry_ready='parry',action_time,True
                 p.recoil_left=0.
                 p.counter_ready=True
-            elif new_target and not enemy.boss:
-                enemy.recoil_time=enemy.recoil_left=C.PARRY_PUSH_TIME
-                push=C.PARRY_PUSH
-                if enemy.kind=='sword':
-                    # Separate overlapping silhouettes without ejecting distant targets.
-                    gap=(enemy.x-p.x)*p.facing
-                    push=max(push,min(78.,106.-gap))
-                enemy.recoil_distance=p.facing*push
+            if first:
+                self._push_parry_area(enemy)
             if not counter:
                 self.effects=[e for e in self.effects if not (e['kind']=='enemy_slash' and e.get('enemy')==enemy.uid)]
             if p.style=='moon' and first:
@@ -684,8 +693,9 @@ class Game:
         enemy.elapsed+=dt
         enemy.hurt=max(0.,enemy.hurt-dt)
         # On a deflection let contact register before the blade drives the target back.
-        push_dt=min(dt,max(0.,.22-enemy.deflect_left-.055)) if enemy.deflect_left>0 else dt
-        self._advance_recoil(enemy,push_dt)
+        delay=min(dt,enemy.parry_push_delay)
+        enemy.parry_push_delay-=delay
+        self._advance_recoil(enemy,dt-delay)
         if not enemy.alive: return
         if enemy.state=='arriving':
             enemy.timer-=dt

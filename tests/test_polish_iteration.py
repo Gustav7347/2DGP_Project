@@ -34,7 +34,7 @@ class PolishIterationTests(unittest.TestCase):
         e=Enemy(99,'sword',p.x+85,hp=500,max_hp=500,state='active');g.enemies=[e]
         p.action='parry';p.action_time=.1;p.parry_ready=True;g._enemy_strike(e)
         self.assertEqual(p.action,'parry');self.assertTrue(p.counter_ready)
-        self.assertEqual(p.parry_feedback,0)
+        self.assertGreater(p.parry_feedback,0)
         self.assertEqual(p.hp,88)
         g.hit_stop=0;e.state='stunned';e.timer=99
         for _ in range(30):g.tick(1/120)

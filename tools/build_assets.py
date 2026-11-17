@@ -92,7 +92,7 @@ def build_player():
     animations.update(registered)
     latest=ASSETS/'player'/'motion-registration-v9.json'
     if latest.exists():animations.update(json.loads(latest.read_text('utf-8')))
-    animations.update(json.loads((ASSETS/'player'/'run-registration-v27.json').read_text('utf8')))
+    animations.update(json.loads((ASSETS/'player'/'run-registration-v26.json').read_text('utf8')))
     result={'sourceOrigin':'top-left','animations':animations,'weapon':attack['weapon']}
     (ASSETS/'player'/'animations.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),'utf-8')
 
